@@ -1,0 +1,4075 @@
+hi
+💄
+😐 Neutral · 60%
+Hello! 👋 Welcome to JinniChirag Makeup Artist. I can help you with:
+  • Services and pricing
+  • Booking an appointment
+  • Contact and social media
+  • Makeup tips
+What would you like to know?
+👤
+What can you do?
+💄
+😐 Neutral · 60%
+Here is an overview of services offered by JinniChirag Makeup Artist:
+
+  1. Party Makeup Services
+  2. Makeup services for parties, receptions, festivals, and special occasions.
+  3. Party Makeup by Chirag Sharma
+  4. Party Makeup by Senior Artist
+  5. Engagement and Pre-Wedding Makeup
+  6. Makeup services for engagement ceremonies, pre-wedding functions, and other wedding-related events.
+  7. Professional henna application for bridal and special occasions.
+  8. Henna by Chirag Sharma
+  9. Henna by a Senior Artist
+  10. Bridal Makeup Services
+
+💬 Ask me about pricing or how to book any of these!
+
+If you need further clarification, feel free to ask.
+Sources:  📄 services  📄 faq  📄 artist-profile
+Sources:
+📄 services📄 faq📄 services📄 artist-profile📄 faq
+👤
+What is the Defination of Henna
+💄
+😐 Neutral · 60%
+Here is an overview of services offered by JinniChirag Makeup Artist:
+
+  1. Party Makeup Services
+  2. Makeup services for parties, receptions, festivals, and special occasions.
+  3. Party Makeup by Chirag Sharma
+  4. Party Makeup by Senior Artist
+  5. Engagement and Pre-Wedding Makeup
+  6. Makeup services for engagement ceremonies, pre-wedding functions, and other wedding-related events.
+  7. Professional henna application for bridal and special occasions.
+  8. Henna by Chirag Sharma
+  9. Henna by a Senior Artist
+  10. Professional Title: Celebrity Makeup Artist and Bridal Makeup Specialist
+
+💬 Ask me about pricing or how to book any of these!
+
+If you need further clarification, feel free to ask.
+Sources:  📄 services  📄 about  📄 artist-profile
+Sources:
+📄 services📄 about📄 artist-profile
+👤
+Give me your socal media Links
+💄
+😐 Neutral · 60%
+Here is the information from our knowledge base:
+
+Q: What are the service locations? A: Services are available across India, Nepal, Pakistan, Bangladesh, and Dubai/UAE.
+
+  • Travel charges apply for outstation events.
+
+If you need further clarification, feel free to ask.
+Sources:  📄 faq
+Sources:
+📄 faq
+👤
+Give me 1 line for me. My name is RUpesh
+💄
+😐 Neutral · 60%
+Here are the contact details for JinniChirag Makeup Artist:
+
+  📞 Phone / WhatsApp: +977 970-7613340
+  💬 WhatsApp: +977 970-7613340
+  📧 Email: jinnie.chirag.mua101@gmail.com
+  📸 Instagram: https://www.instagram.com/_jinniechiragmua/
+  ▶️  YouTube: https://www.youtube.com/@jinniechiragmua
+  📘 Facebook: https://www.facebook.com/chirag.sharma.5477272/
+  🎵 TikTok: https://www.tiktok.com/@_chirag_101
+
+If you need further clarification, feel free to ask.
+Sources:  📄 artist-profile
+Sources:
+📄 artist-profile
+___________________
+(venv) rupesh@rupesh-Inspiron-3501:~/Desktop/chatbot$ tree -I "venv|__pycache__"^C
+(venv) rupesh@rupesh-Inspiron-3501:~/Desktop/chatbot$ tree -I "venv|__pycache__"
+.
+├── agent
+│   ├── chunker.py
+│   ├── config.py
+│   ├── db.py
+│   ├── embedder.py
+│   ├── emotion.py
+│   ├── formatter.py
+│   ├── __init__.py
+│   ├── memory.py
+│   ├── retriever.py
+│   ├── schemas.py
+│   ├── summarizer.py
+│   └── utils.py
+├── app.py
+├── frontend
+│   └── index.html
+├── requirements.txt
+└── trainnlp
+    ├── emotion_model.py
+    ├── fuzzy_match.py
+    ├── models
+    │   └── nlu_model.pkl
+    ├── nlu.py
+    └── trainer.py
+
+5 directories, 20 files
+(venv) rupesh@rupesh-Inspiron-3501:~/Desktop/chatbot$ python -m trainnlp.trainer retrain
+Forcing NLU retraining...
+[TRAINER] No corrections to train on — retraining with base data only
+[NLU] Trained on 235 examples. CV accuracy: 0.63 ± 0.01
+[NLU] Model saved to /home/rupesh/Desktop/chatbot/trainnlp/models/nlu_model.pkl
+[NLU] Model retrained and cache refreshed.
+[TRAINER] Retraining complete with 0 correction examples.
+(venv) rupesh@rupesh-Inspiron-3501:~/Desktop/chatbot$ uvicorn app:app --reload --host 0.0.0.0 --port 8000
+INFO:     Will watch for changes in these directories: ['/home/rupesh/Desktop/chatbot']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [55723] using WatchFiles
+INFO:     Started server process [55725]
+INFO:     Waiting for application startup.
+[NLU] Model loaded from /home/rupesh/Desktop/chatbot/trainnlp/models/nlu_model.pkl
+[TRAINER] NLU model ready.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:58538 - "OPTIONS /chat HTTP/1.1" 200 OK
+[INTENT]  msg='hi'
+          corrected='hi'
+          intent=greeting  nlu=None(0.00)
+          emotion=neutral(0.60)
+INFO:     127.0.0.1:58538 - "POST /chat HTTP/1.1" 200 OK
+[INTENT]  msg='What can you do?'
+          corrected='What can you do?'
+          intent=default  nlu=None(0.00)
+          emotion=neutral(0.60)
+[EXPAND]  'What can you do?' → 'services offered bridal party makeup henna'
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|█| 103/103 [00:00<00:00, 1131.01it/s, Materializing param=pooler.
+BertModel LOAD REPORT from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED    :can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[RETRIEVAL] chunks=5 best=0.8250 result=PASS
+INFO:     127.0.0.1:33848 - "POST /chat HTTP/1.1" 200 OK
+[INTENT]  msg='What is the Defination of Henna'
+          corrected='What is the Defination of Henna'
+          intent=default  nlu=None(0.00)
+          emotion=neutral(0.60)
+[RETRIEVAL] chunks=3 best=0.4660 result=PASS
+INFO:     127.0.0.1:34134 - "POST /chat HTTP/1.1" 200 OK
+[INTENT]  msg='Give me your socal media Links'
+          corrected='Give me your socal media Links'
+          intent=default  nlu=None(0.00)
+          emotion=neutral(0.60)
+[RETRIEVAL] chunks=1 best=0.2315 result=PASS
+INFO:     127.0.0.1:41418 - "POST /chat HTTP/1.1" 200 OK
+[INTENT]  msg='Give me 1 line for me. My name is RUpesh'
+          corrected='Give me 1 line for me. My name is RUpesh'
+          intent=short  nlu=None(0.00)
+          emotion=neutral(0.60)
+[RETRIEVAL] chunks=1 best=0.2547 result=PASS
+INFO:     127.0.0.1:49812 - "POST /chat HTTP/1.1" 200 OK
+_________
+Below are codes:
+app.py:
+
+"""
+app.py — FastAPI entry point. v3.0 — Full NLU + Fuzzy + ML Emotion + Trainer.
+
+UPDATED PIPELINE:
+  1.  Load session memory
+  2.  detect_intent_mode_smart()
+        → fuzzy_match.correct_query()   (typo/slang correction)
+        → nlu.predict_intent()          (TF-IDF+SVM classifier)
+        → rule-based fallback           (if NLU uncertain)
+  3.  emotion_model.detect_emotion_ml()
+        → DistilBERT classifier         (300MB, CPU)
+        → VADER fallback                (if model unavailable)
+  4.  Memory meta-question? → answer from history
+  5.  Greeting/small-talk?  → conversational reply
+  6.  expand_vague_query()  → richer KB embedding input
+  7.  expand_query_with_memory() → follow-up context
+  8.  embed + retrieve + summarise + format
+  9.  trainer.log_interaction() → continuous learning log
+  10. Return ChatResponse
+
+ENDPOINTS:
+  GET  /              → serves static/index.html
+  POST /chat          → full pipeline
+  POST /admin/retrain → force NLU retraining
+  GET  /admin/gaps    → show unanswered KB gaps
+  GET  /admin/recent  → show recent interactions
+  POST /admin/correct → add a labeled correction for retraining
+"""
+
+import re
+from pathlib import Path
+
+from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
+from pydantic import BaseModel
+
+from agent.schemas    import ChatRequest, ChatResponse, ChunkMeta
+from agent.utils      import (
+    detect_intent_mode_smart,
+    is_conversational,
+    is_memory_question,
+    expand_vague_query,
+)
+from agent.memory     import load_memory, save_memory, expand_query_with_memory
+from agent.chunker    import ensure_chunks_for_all_docs
+from agent.embedder   import ensure_embeddings_for_all_chunks, embed_query
+from agent.retriever  import retrieve_top_chunks
+from agent.summarizer import extractive_summarise
+from agent.formatter  import (
+    build_answer,
+    build_fallback_answer,
+    build_conversational_reply,
+)
+from agent.config import TOP_K, SIM_THRESHOLD
+
+
+# ── App setup ──────────────────────────────────────────────────────────────
+app = FastAPI(
+    title="JinniChirag MUA — AI Assistant",
+    description="NLU-powered emotion-aware RAG chatbot.",
+    version="3.0.0",
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["*"],
+)
+
+STATIC_DIR = Path(__file__).parent / "static"
+if STATIC_DIR.exists():
+    app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
+
+
+# ── Startup: pre-load NLU model and create DB indexes ─────────────────────
+@app.on_event("startup")
+async def startup_event():
+    try:
+        from trainnlp.trainer import init_trainer
+        init_trainer()
+    except Exception as e:
+        print(f"[STARTUP] trainer init warning: {e}")
+
+
+@app.get("/", include_in_schema=False)
+async def serve_ui():
+    index_path = STATIC_DIR / "index.html"
+    if not index_path.exists():
+        raise HTTPException(status_code=404, detail="Frontend not found.")
+    return FileResponse(str(index_path), media_type="text/html")
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# POST /chat — main pipeline
+# ══════════════════════════════════════════════════════════════════════════
+
+@app.post("/chat", response_model=ChatResponse)
+async def chat(request: ChatRequest) -> ChatResponse:
+    session_id = request.session_id.strip()
+    user_msg   = request.message.strip()
+
+    if not user_msg:
+        raise HTTPException(status_code=400, detail="Message cannot be empty.")
+
+    # ── 1. Load session memory ─────────────────────────────────────────────
+    memory = load_memory(session_id)
+
+    # ── 2. Smart intent detection (NLU + fuzzy + rule-based) ──────────────
+    nlu_result      = detect_intent_mode_smart(user_msg)
+    intent_mode     = nlu_result["intent_mode"]
+    corrected_query = nlu_result["corrected_query"]
+    nlu_intent      = nlu_result["nlu_intent"]
+    nlu_confidence  = nlu_result["nlu_confidence"]
+
+    print(f"[INTENT]  msg={repr(user_msg[:55])}")
+    print(f"          corrected={repr(corrected_query[:55])}")
+    print(f"          intent={intent_mode}  nlu={nlu_intent}({nlu_confidence:.2f})")
+
+    # ── 3. Emotion detection (ML model with VADER fallback) ────────────────
+    try:
+        from agent.emotion_model import detect_emotion_ml
+        emotion_result = detect_emotion_ml(user_msg)
+    except Exception:
+        from agent.emotion import detect_emotion
+        emotion_result = detect_emotion(user_msg)
+
+    emotion_label = emotion_result["label"]
+    emotion_conf  = emotion_result["confidence"]
+
+    print(f"          emotion={emotion_label}({emotion_conf:.2f})")
+
+    # ── 4. Memory meta-questions ───────────────────────────────────────────
+    if intent_mode == "memory" or is_memory_question(user_msg):
+        reply = _answer_from_memory(user_msg, memory)
+        save_memory(session_id, user_msg, reply)
+        _log(session_id, user_msg, "memory", emotion_label, reply,
+             0, 0.0, False, nlu_intent, nlu_confidence, corrected_query)
+        return _make_response(session_id, reply, "memory",
+                              emotion_label, emotion_conf, 0, [])
+
+    # ── 5. Greeting / small-talk ───────────────────────────────────────────
+    if is_conversational(intent_mode):
+        reply = build_conversational_reply(intent_mode, emotion_label)
+        save_memory(session_id, user_msg, reply)
+        _log(session_id, user_msg, intent_mode, emotion_label, reply,
+             0, 0.0, False, nlu_intent, nlu_confidence, corrected_query)
+        return _make_response(session_id, reply, intent_mode,
+                              emotion_label, emotion_conf, 0, [])
+
+    # ── 6–7. Query expansion ───────────────────────────────────────────────
+    # Use corrected_query (typos fixed) as the base for expansion
+    expanded_query = expand_vague_query(corrected_query)
+    if expanded_query == corrected_query:
+        expanded_query = expand_query_with_memory(corrected_query, memory)
+
+    if expanded_query != user_msg:
+        print(f"[EXPAND]  {repr(user_msg[:40])} → {repr(expanded_query[:60])}")
+
+    # ── 8. Chunking + embedding ────────────────────────────────────────────
+    ensure_chunks_for_all_docs()
+    ensure_embeddings_for_all_chunks()
+    query_vec = embed_query(expanded_query)
+
+    # ── 9. Retrieval ───────────────────────────────────────────────────────
+    top_chunks   = retrieve_top_chunks(query_vec, top_k=TOP_K)
+    best_score   = top_chunks[0]["score"] if top_chunks else 0.0
+    used_sources = len(top_chunks)
+    was_fallback = best_score < SIM_THRESHOLD or used_sources < 1
+    status       = "PASS" if not was_fallback else "FALLBACK"
+
+    print(f"[RETRIEVAL] chunks={used_sources} best={best_score:.4f} result={status}")
+
+    # ── 10. Confidence gate ────────────────────────────────────────────────
+    if was_fallback:
+        related_titles = _get_related_titles(expanded_query)
+        fallback_text  = build_fallback_answer(emotion_label, related_titles)
+        save_memory(session_id, user_msg, fallback_text)
+        _log(session_id, user_msg, intent_mode, emotion_label, fallback_text,
+             0, best_score, True, nlu_intent, nlu_confidence, corrected_query)
+        return _make_response(session_id, fallback_text, intent_mode,
+                              emotion_label, emotion_conf, 0, [])
+
+    # ── 11. Summarisation ─────────────────────────────────────────────────
+    # Use ORIGINAL user_msg for content-type detection (has clearer signals)
+    # Use nlu_intent as content hint if available
+    try:
+        from agent.nlu import nlu_content_hint
+        from agent.nlu import predict_intent as _nlu_predict
+        _nlu_r    = _nlu_predict(corrected_query)
+        hint      = nlu_content_hint(_nlu_r)
+    except Exception:
+        hint = None
+
+    summary = extractive_summarise(
+        query        = user_msg,
+        chunks       = top_chunks,
+        content_hint = hint,      # optional NLU content-type hint
+    )
+
+    # ── 12. Format answer ─────────────────────────────────────────────────
+    answer_text = build_answer(
+        summary     = summary,
+        emotion     = emotion_label,
+        intent_mode = intent_mode,
+    )
+
+    # ── 13. Save memory ────────────────────────────────────────────────────
+    save_memory(session_id, user_msg, answer_text)
+
+    # ── 14. Log interaction ────────────────────────────────────────────────
+    _log(session_id, user_msg, intent_mode, emotion_label, answer_text,
+         used_sources, best_score, False, nlu_intent, nlu_confidence, corrected_query)
+
+    # ── 15. Build response ─────────────────────────────────────────────────
+    chunk_metas = [
+        ChunkMeta(
+            chunk_id   = c["chunk_id"],
+            doc_id     = c["doc_id"],
+            title      = c["title"],
+            similarity = c["score"],
+            preview    = c["chunk_text"][:120],
+        )
+        for c in top_chunks
+    ]
+
+    return _make_response(session_id, answer_text, intent_mode,
+                          emotion_label, emotion_conf, used_sources, chunk_metas)
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# Admin endpoints
+# ══════════════════════════════════════════════════════════════════════════
+
+class CorrectionRequest(BaseModel):
+    message:        str
+    correct_intent: str
+
+
+@app.post("/admin/retrain")
+async def admin_retrain():
+    """Force NLU model retraining with all accumulated corrections."""
+    try:
+        from agent.trainer import force_retrain
+        success = force_retrain()
+        return {"status": "ok" if success else "error", "retrained": success}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/admin/gaps")
+async def admin_gaps(limit: int = 20):
+    """Show KB gaps — queries the chatbot couldn't answer repeatedly."""
+    try:
+        from agent.trainer import get_kb_gaps
+        gaps = get_kb_gaps(limit=limit)
+        return {"gaps": gaps, "count": len(gaps)}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/admin/recent")
+async def admin_recent(limit: int = 50):
+    """Show recent chat interactions for review."""
+    try:
+        from agent.trainer import get_recent_interactions
+        interactions = get_recent_interactions(limit=limit)
+        return {"interactions": interactions, "count": len(interactions)}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/admin/correct")
+async def admin_correct(req: CorrectionRequest):
+    """Add a labeled correction for NLU retraining."""
+    try:
+        from agent.trainer import add_correction
+        success = add_correction(req.message, req.correct_intent)
+        return {"status": "ok" if success else "invalid_intent", "saved": success}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# Private helpers
+# ══════════════════════════════════════════════════════════════════════════
+
+def _make_response(session_id, answer_text, intent_mode,
+                   emotion_label, emotion_conf, used_sources, top_chunks):
+    return ChatResponse(
+        session_id         = session_id,
+        answer_text        = answer_text,
+        intent_mode        = intent_mode,
+        emotion_label      = emotion_label,
+        emotion_confidence = emotion_conf,
+        used_sources       = used_sources,
+        top_chunks         = top_chunks,
+    )
+
+
+def _log(session_id, user_msg, intent_mode, emotion_label, answer_text,
+         used_sources, best_score, was_fallback,
+         nlu_intent, nlu_confidence, corrected_query):
+    """Non-blocking interaction log."""
+    try:
+        from agent.trainer import log_interaction
+        log_interaction(
+            session_id      = session_id,
+            user_message    = user_msg,
+            intent_mode     = intent_mode,
+            emotion_label   = emotion_label,
+            answer_text     = answer_text,
+            used_sources    = used_sources,
+            best_score      = best_score,
+            was_fallback    = was_fallback,
+            nlu_intent      = nlu_intent,
+            nlu_confidence  = nlu_confidence,
+            corrected_query = corrected_query,
+        )
+    except Exception:
+        pass   # never crash the main pipeline due to logging
+
+
+def _answer_from_memory(user_msg: str, memory: dict) -> str:
+    user_history = memory.get("user_messages", [])
+    if not user_history:
+        return ("I don't have any record of previous questions in this session yet. "
+                "Feel free to ask me anything! 😊")
+
+    normalised = re.sub(r"\bout\b", "our", user_msg.lower())
+
+    if "first" in normalised:
+        return f"Your first question in this session was:\n  ❓ \"{user_history[0]}\""
+    if any(w in normalised for w in ("last", "previous", "recent")):
+        if len(user_history) >= 2:
+            return f"Your previous question was:\n  ❓ \"{user_history[-2]}\""
+        return f"Your first (and only) question was:\n  ❓ \"{user_history[0]}\""
+
+    lines = ["Here are your recent questions in this session:"]
+    for i, q in enumerate(user_history[-5:], 1):
+        lines.append(f"  {i}. \"{q}\"")
+    return "\n".join(lines)
+
+
+def _get_related_titles(query: str) -> list[str]:
+    from agent.db import col_chunks
+    from agent.utils import extract_keywords
+    keywords = extract_keywords(query)
+    if not keywords:
+        docs = list(col_chunks().find({}, {"title": 1}).limit(2))
+        return list({d.get("title", "") for d in docs if d.get("title")})
+    pattern = "|".join(re.escape(k) for k in keywords[:5])
+    cursor  = col_chunks().find(
+        {"title": {"$regex": pattern, "$options": "i"}}, {"title": 1}
+    ).limit(4)
+    titles = list({d.get("title", "") for d in cursor if d.get("title")})
+    return titles[:2]
+_______
+trainnlp/
+
+emotion_model.py:
+"""
+emotion_model.py — DistilBERT-based multi-class emotion detection.
+
+WHY THIS EXISTS:
+  VADER is a lexicon-based tool designed for social media sentiment.
+  It only produces positive/negative/neutral scores and misclassifies
+  many makeup business queries.
+  A fine-tuned DistilBERT model is far more accurate for nuanced
+  emotions like confused, excited, angry, sad — and still runs on CPU
+  within ~300 MB RAM.
+
+MODEL USED:
+  j-hartmann/emotion-english-distilroberta-base
+  • Trained on 6 datasets (GoEmotions, ISEAR, etc.)
+  • Labels: anger, disgust, fear, joy, neutral, sadness, surprise
+  • Size: ~330 MB, loads in ~3 seconds on CPU
+  • Inference: ~50ms per query on CPU
+
+FALLBACK:
+  If the model fails to load (RAM, network, etc.), falls back to
+  VADER + rule-based detection automatically.
+
+RAM COST: ~330 MB for the model weights
+CPU COST: ~50ms per inference
+"""
+
+import logging
+from typing import Optional
+
+logger = logging.getLogger(__name__)
+
+# ── Emotion label mappings ─────────────────────────────────────────────────
+# Maps DistilRoBERTa labels → our system labels
+_DISTILROBERTA_MAP = {
+    "anger":    "angry",
+    "disgust":  "angry",     # treat disgust as angry for our use case
+    "fear":     "sad",       # treat fear as sad
+    "joy":      "happy",
+    "neutral":  "neutral",
+    "sadness":  "sad",
+    "surprise": "excited",   # treat surprise as excited
+}
+
+# ── Alternative model (smaller, if memory is very tight) ──────────────────
+_PRIMARY_MODEL   = "j-hartmann/emotion-english-distilroberta-base"
+_FALLBACK_MODEL  = "bhadresh-savani/distilbert-base-uncased-emotion"
+
+# ── Singleton classifier ───────────────────────────────────────────────────
+_classifier = None
+_model_name  = None
+
+
+def _load_model():
+    """
+    Lazily load the emotion classifier.
+    Tries primary model first, then fallback, then returns None.
+    """
+    global _classifier, _model_name
+
+    if _classifier is not None:
+        return _classifier
+
+    for model_id in (_PRIMARY_MODEL, _FALLBACK_MODEL):
+        try:
+            from transformers import pipeline as hf_pipeline
+            print(f"[EMOTION_MODEL] Loading {model_id}...")
+            _classifier = hf_pipeline(
+                "text-classification",
+                model     = model_id,
+                top_k     = None,       # get all label scores
+                device    = -1,         # CPU only
+                truncation= True,
+                max_length= 128,
+            )
+            _model_name = model_id
+            print(f"[EMOTION_MODEL] Loaded: {model_id}")
+            return _classifier
+        except Exception as e:
+            logger.warning(f"[EMOTION_MODEL] Failed to load {model_id}: {e}")
+            continue
+
+    logger.warning("[EMOTION_MODEL] All models failed to load. Using VADER fallback.")
+    return None
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# A) DistilBERT-based detection
+# ══════════════════════════════════════════════════════════════════════════
+
+def _predict_with_model(message: str) -> Optional[dict]:
+    """
+    Run the DistilRoBERTa classifier and return our standardised result.
+    Returns None if model is unavailable.
+    """
+    clf = _load_model()
+    if clf is None:
+        return None
+
+    try:
+        results = clf(message[:512])[0]   # truncate to model max length
+        # results is a list of {"label": str, "score": float}
+        # Sort by score descending
+        sorted_results = sorted(results, key=lambda x: x["score"], reverse=True)
+        top = sorted_results[0]
+
+        raw_label  = top["label"].lower()
+        mapped     = _DISTILROBERTA_MAP.get(raw_label, "neutral")
+        confidence = round(float(top["score"]), 3)
+
+        return {"label": mapped, "confidence": confidence}
+
+    except Exception as e:
+        logger.warning(f"[EMOTION_MODEL] Inference error: {e}")
+        return None
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# B) VADER fallback (same logic as original emotion.py)
+# ══════════════════════════════════════════════════════════════════════════
+
+def _vader_fallback(message: str) -> dict:
+    """
+    VADER + rule-based emotion detection.
+    Used when DistilBERT model is unavailable.
+    """
+    import re
+    from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+
+    _analyser = SentimentIntensityAnalyzer()
+
+    # Confusion keywords — tightly scoped
+    CONFUSION_KEYWORDS = [
+        "why", "explain", "confused",
+        "i don't understand", "i dont understand",
+        "clarify", "meaning", "means", "define",
+        "unclear", "not sure", "not working", "not understanding",
+        "makes no sense", "doesn't make sense",
+    ]
+    CONFUSION_PATTERN = re.compile(
+        r'\b(' + '|'.join(re.escape(kw) for kw in CONFUSION_KEYWORDS) + r')\b',
+        re.IGNORECASE,
+    )
+    SERVICE_OVERRIDE = re.compile(
+        r'\b(service|services|book|booking|price|cost|offer|provide|'
+        r'available|appointment|bridal|makeup|henna|party|chirag|'
+        r'give me|tell me|what can|what do|about you|brief|short)\b',
+        re.IGNORECASE,
+    )
+    EXCITEMENT_PATTERN = re.compile(
+        r'\b(excited|cant wait|looking forward|amazing|wonderful|'
+        r'love it|awesome|fantastic|wow|yay|so happy|thrilled)\b',
+        re.IGNORECASE,
+    )
+
+    if EXCITEMENT_PATTERN.search(message):
+        return {"label": "excited", "confidence": 0.80}
+
+    if SERVICE_OVERRIDE.search(message):
+        scores = _analyser.polarity_scores(message)
+        c = scores["compound"]
+        if c <= -0.55: return {"label": "angry",   "confidence": round(min(1.0, abs(c)), 2)}
+        if c >= 0.35:  return {"label": "happy",   "confidence": round(min(1.0, c), 2)}
+        return {"label": "neutral", "confidence": 0.60}
+
+    if CONFUSION_PATTERN.search(message):
+        return {"label": "confused", "confidence": 0.85}
+
+    scores = _analyser.polarity_scores(message)
+    c = scores["compound"]
+    if c <= -0.55: return {"label": "angry",   "confidence": round(min(1.0, abs(c)), 2)}
+    if c <= -0.25: return {"label": "sad",     "confidence": round(min(1.0, abs(c) * 0.8), 2)}
+    if c >= 0.35:  return {"label": "happy",   "confidence": round(min(1.0, c), 2)}
+    return {"label": "neutral", "confidence": 0.60}
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# C) Main public function
+# ══════════════════════════════════════════════════════════════════════════
+
+def detect_emotion_ml(message: str) -> dict:
+    """
+    Detect emotion using DistilBERT model with VADER fallback.
+
+    Returns:
+        {"label": str, "confidence": float}
+        label ∈ {angry, sad, confused, excited, happy, neutral}
+    """
+    # Try ML model first
+    result = _predict_with_model(message)
+    if result is not None:
+        # Override: rule-based confusion/excitement detection is still more
+        # reliable for domain-specific messages ("why is it not working" etc.)
+        import re
+        CONFUSION_PATTERN = re.compile(
+            r'\b(why|explain|confused|clarify|unclear|not sure|'
+            r'not working|not understanding|makes no sense)\b',
+            re.IGNORECASE,
+        )
+        SERVICE_OVERRIDE = re.compile(
+            r'\b(service|services|book|booking|price|cost|offer|'
+            r'available|appointment|bridal|makeup|henna|chirag|'
+            r'give me|tell me|about you|brief)\b',
+            re.IGNORECASE,
+        )
+        EXCITEMENT_PATTERN = re.compile(
+            r'\b(excited|cant wait|amazing|wow|yay|thrilled|looking forward)\b',
+            re.IGNORECASE,
+        )
+
+        # High-confidence rule overrides (more reliable for domain inputs)
+        if EXCITEMENT_PATTERN.search(message):
+            return {"label": "excited", "confidence": 0.85}
+        if CONFUSION_PATTERN.search(message) and not SERVICE_OVERRIDE.search(message):
+            return {"label": "confused", "confidence": 0.85}
+
+        return result
+
+    # Fallback to VADER
+    logger.debug("[EMOTION_MODEL] Using VADER fallback")
+    return _vader_fallback(message)
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# D) Check if model is available (for health checks)
+# ══════════════════════════════════════════════════════════════════════════
+
+def is_model_available() -> bool:
+    """Return True if the DistilBERT emotion model loaded successfully."""
+    return _load_model() is not None
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# E) CLI test
+# ══════════════════════════════════════════════════════════════════════════
+
+if __name__ == "__main__":
+    print("Emotion Detection Test (Ctrl+C to quit)\n")
+    test_sentences = [
+        "I'm so excited to book my bridal makeup!",
+        "Why is it not understanding my question?",
+        "What is your phone number?",
+        "I am very angry about the service.",
+        "Give me 1 line about you.",
+        "What are your services?",
+        "I don't understand the booking process.",
+        "How much does bridal makeup cost?",
+        "Thank you so much!",
+        "This is terrible, nothing is working.",
+    ]
+    for sentence in test_sentences:
+        result = detect_emotion_ml(sentence)
+        print(f"  '{sentence[:50]}'")
+        print(f"    → {result['label']} ({result['confidence']:.2f})\n")
+
+    print("\nInteractive mode (Ctrl+C to quit):")
+    while True:
+        try:
+            msg = input("You: ").strip()
+            if msg:
+                r = detect_emotion_ml(msg)
+                print(f"  → {r['label']} ({r['confidence']:.2f})")
+        except KeyboardInterrupt:
+            break
+___________
+fuzzy_match.py:
+"""
+fuzzy_match.py — Query correction using RapidFuzz + phonetic matching.
+
+WHY THIS EXISTS:
+  Users type: "hw much is bridl makup" → embeddings get garbage input.
+  This module corrects the query BEFORE it hits the embedder,
+  significantly improving retrieval quality for typo-heavy inputs.
+
+HOW IT WORKS:
+  1. Word-level spell correction using a domain vocabulary.
+     Each word is compared against known good words using
+     Levenshtein distance (via rapidfuzz).
+  2. Query-level intent matching: entire query matched against
+     a catalog of known good queries to catch slang/abbreviations.
+  3. Only corrections with high confidence are applied.
+
+DOMAIN VOCABULARY:
+  Built from makeup/booking domain terms + common English words.
+  Corrections never change domain terms incorrectly (e.g. "henna" stays "henna").
+
+RAM COST: ~5 MB
+CPU COST: < 5ms per query
+"""
+
+import re
+import logging
+from typing import Optional
+
+logger = logging.getLogger(__name__)
+
+# ── Optional: only import if installed ────────────────────────────────────
+try:
+    from rapidfuzz import fuzz, process
+    _RAPIDFUZZ_AVAILABLE = True
+except ImportError:
+    _RAPIDFUZZ_AVAILABLE = False
+    logger.warning("[FUZZY] rapidfuzz not installed. Run: pip install rapidfuzz --break-system-packages")
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# A) Domain vocabulary — all valid terms we want to preserve / correct TO
+# ══════════════════════════════════════════════════════════════════════════
+
+DOMAIN_VOCAB = {
+    # Core makeup terms
+    "bridal", "bride", "makeup", "makeover", "henna", "mehendi",
+    "party", "engagement", "reception", "wedding", "pre-wedding", "prewedding",
+    "signature", "luxury", "premium",
+    # Business terms
+    "booking", "book", "appointment", "schedule", "availability", "available",
+    "slot", "confirm", "confirmation", "otp", "advance", "payment",
+    "price", "pricing", "cost", "charge", "fee", "rate", "package",
+    "service", "services", "offer", "provides", "provides",
+    # Contact terms
+    "contact", "phone", "number", "email", "whatsapp", "instagram",
+    "youtube", "facebook", "tiktok", "social", "media", "follow", "followers",
+    # About terms
+    "chirag", "sharma", "jinnichirag", "jinni", "artist", "celebrity",
+    "experience", "years", "brand", "founded",
+    # Question words
+    "what", "how", "where", "when", "why", "who", "which", "can", "do",
+    "does", "is", "are", "tell", "give", "show", "explain", "describe",
+    "list", "about", "your", "you", "me", "my", "the", "and", "or",
+    # Common adjectives
+    "much", "many", "first", "last", "previous", "next", "free",
+    "short", "brief", "detailed", "complete", "full",
+}
+
+# ── Explicit slang / abbreviation → correct word map ─────────────────────
+SLANG_MAP = {
+    # Abbreviations
+    "hw":     "how",
+    "wut":    "what",
+    "wot":    "what",
+    "ur":     "your",
+    "u":      "you",
+    "r":      "are",
+    "pls":    "please",
+    "plz":    "please",
+    "plss":   "please",
+    "btw":    "by the way",
+    "idk":    "i do not know",
+    "fyi":    "for your information",
+    "asap":   "as soon as possible",
+    "lol":    "okay",
+    "omg":    "oh my",
+    "thx":    "thanks",
+    "ty":     "thank you",
+    "brb":    "be right back",
+    "abt":    "about",
+    "cnt":    "count",
+    "info":   "information",
+    "num":    "number",
+    "ph":     "phone",
+    "ph#":    "phone number",
+    "no":     "number",      # contextual — "no" can mean "number" in queries like "your no"
+    "no.":    "number",
+    "ig":     "instagram",
+    "yt":     "youtube",
+    "fb":     "facebook",
+    "tt":     "tiktok",
+    "insta":  "instagram",
+    "instr":  "instagram",
+    "wapp":   "whatsapp",
+    "wa":     "whatsapp",
+    "gmme":   "give me",
+    "gime":   "give me",
+    "gimme":  "give me",
+    "lemme":  "let me",
+    "wanna":  "want to",
+    "gonna":  "going to",
+    "gotta":  "got to",
+    "kinda":  "kind of",
+    "sorta":  "sort of",
+    "dunno":  "do not know",
+    "dnt":    "do not",
+    "dont":   "do not",
+    "doesnt": "does not",
+    "isnt":   "is not",
+    "arent":  "are not",
+    "cant":   "can not",
+    "couldnt":"could not",
+    "wouldnt":"would not",
+    "wont":   "will not",
+    "2":      "to",          # "how 2 book"
+    "4":      "for",         # "4 bridal"
+    "b4":     "before",
+    "askin":  "asking",
+    "tellin": "telling",
+    "lookin": "looking",
+    "makin":  "making",
+    "writin": "writing",
+    "wrkshp": "workshop",
+    "bridl":  "bridal",
+    "hnna":   "henna",
+    "mehndi": "mehendi",
+    "makup":  "makeup",
+    "bokng":  "booking",
+    "appntmnt": "appointment",
+    "servics":  "services",
+    "servc":    "services",
+    "pricng":   "pricing",
+    "detals":   "details",
+    "dtails":   "details",
+    "folwers":  "followers",
+    "folowers": "followers",
+}
+
+# ── Full-query slang patterns → normalised query ──────────────────────────
+QUERY_NORMALISE_MAP = [
+    (r"\bwut\s+u\s+do\b",           "what do you do"),
+    (r"\bwut\s+can\s+u\s+do\b",     "what can you do"),
+    (r"\bwuts\s+ur\s+num\b",        "what is your phone number"),
+    (r"\bhw\s+2\s+book\b",          "how to book"),
+    (r"\bhw\s+much\b",              "how much does it cost"),
+    (r"\bgimme\s+ur\b",             "give me your"),
+    (r"\bgimme\s+1\s+line\b",       "give me 1 line"),
+    (r"\bwanna\s+book\b",           "i want to book"),
+    (r"\bbook\s+pls\b",             "how do i book"),
+    (r"\bprice\s*\?\s*$",           "what is the price"),
+    (r"\bcost\s*\?\s*$",            "what is the cost"),
+    (r"\brates\s*\?\s*$",           "what are your rates"),
+    (r"\bcontact\s*\?\s*$",         "how to contact you"),
+    (r"\bservices\s+pls\b",         "what are your services"),
+    (r"\bservices\s+list\b",        "list your services"),
+    (r"\btips\s+pls\b",             "give me makeup tips"),
+    (r"\babt\s+u\b",                "about you"),
+    (r"\btell\s+me\s+abt\s+urself\b","tell me about yourself"),
+    (r"\bur\s+insta\b",             "your instagram"),
+    (r"\big\s+link\b",              "instagram link"),
+    (r"\byt\s+channel\b",           "youtube channel"),
+    (r"\bslot\s+available\b",       "do you have slot available"),
+    (r"\bfree\s+date\b",            "are you available on what date"),
+    (r"\bout\s+first\s+chat\b",     "our first chat"),   # typo fix
+    (r"\bout\s+first\s+question\b", "our first question"),
+]
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# B) Core correction functions
+# ══════════════════════════════════════════════════════════════════════════
+
+def _expand_slang(text: str) -> str:
+    """Replace known slang words with their standard equivalents."""
+    words = text.split()
+    corrected = []
+    for word in words:
+        # Strip trailing punctuation for lookup
+        stripped = word.rstrip(".,?!;:")
+        if stripped in SLANG_MAP:
+            corrected.append(SLANG_MAP[stripped])
+        else:
+            corrected.append(word)
+    return " ".join(corrected)
+
+
+def _apply_query_patterns(text: str) -> str:
+    """Apply full-query normalisation patterns (regex-based)."""
+    for pattern, replacement in QUERY_NORMALISE_MAP:
+        text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
+    return text
+
+
+def _fuzzy_word_correct(word: str, threshold: int = 82) -> str:
+    """
+    Correct a single word using fuzzy matching against domain vocabulary.
+    Only corrects if the match score is above the threshold.
+    Returns the original word if no good match is found.
+    """
+    if not _RAPIDFUZZ_AVAILABLE:
+        return word
+    if len(word) <= 2:
+        return word   # skip very short words — too many false positives
+    if word in DOMAIN_VOCAB:
+        return word   # already correct
+
+    # Find closest match in domain vocab
+    result = process.extractOne(
+        word,
+        DOMAIN_VOCAB,
+        scorer=fuzz.ratio,
+        score_cutoff=threshold,
+    )
+    if result:
+        match, score, _ = result
+        return match
+    return word
+
+
+def _fuzzy_correct_words(text: str, threshold: int = 82) -> str:
+    """Apply word-level fuzzy correction to the full query."""
+    if not _RAPIDFUZZ_AVAILABLE:
+        return text
+    words = text.split()
+    corrected = [_fuzzy_word_correct(w, threshold) for w in words]
+    return " ".join(corrected)
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# C) Main public function
+# ══════════════════════════════════════════════════════════════════════════
+
+def correct_query(message: str) -> str:
+    """
+    Full pipeline: apply all correction steps in order.
+
+    Steps:
+      1. Lowercase and strip
+      2. Apply full-query pattern normalisations (slang phrases)
+      3. Expand individual slang words
+      4. Apply fuzzy word-level correction (if rapidfuzz available)
+      5. Re-strip whitespace
+
+    Returns the corrected query string.
+    If the input is unchanged, returns it as-is efficiently.
+    """
+    original = message.strip()
+    text = original.lower()
+
+    # Step 1: Full-query patterns (highest priority)
+    text = _apply_query_patterns(text)
+
+    # Step 2: Slang word expansion
+    text = _expand_slang(text)
+
+    # Step 3: Fuzzy word correction (for remaining typos)
+    # Only apply fuzzy if the query still looks potentially misspelled
+    # (heuristic: any word length > 3 not in domain vocab)
+    words = text.split()
+    has_unknown = any(
+        len(w) > 3 and w not in DOMAIN_VOCAB and w not in SLANG_MAP
+        for w in words
+    )
+    if has_unknown:
+        text = _fuzzy_correct_words(text, threshold=85)
+
+    # Step 4: Clean up whitespace
+    text = re.sub(r"\s+", " ", text).strip()
+
+    if text != original.lower():
+        logger.debug(f"[FUZZY] '{original}' → '{text}'")
+        print(f"[FUZZY] '{original}' → '{text}'")
+
+    return text
+
+
+def correction_changed(original: str, corrected: str) -> bool:
+    """Return True if the correction actually changed something meaningful."""
+    return original.lower().strip() != corrected.lower().strip()
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# D) CLI — test interactively
+# ══════════════════════════════════════════════════════════════════════════
+
+if __name__ == "__main__":
+    print("Fuzzy Query Correction Test (Ctrl+C to quit)\n")
+    while True:
+        try:
+            msg = input("Input: ").strip()
+            if msg:
+                result = correct_query(msg)
+                print(f"  Corrected: {result}\n")
+        except KeyboardInterrupt:
+            break
+____
+nlu.py:
+
+"""
+nlu.py — Trainable local NLU: TF-IDF + LinearSVC intent classifier.
+
+WHY THIS EXISTS:
+  The old system used hardcoded phrase lists (_KB_INTENT_OVERRIDES,
+  _SMALL_TALK_EXACT, etc.) that broke on any phrasing not in the list.
+  This module trains a real statistical classifier on labeled examples,
+  so it generalises to unseen phrasings, slang, and typos.
+
+HOW IT WORKS:
+  1. A labeled training set maps example utterances → intent labels.
+  2. TF-IDF converts text to weighted feature vectors (char + word n-grams).
+  3. LinearSVC learns a decision boundary per intent class.
+  4. At inference, the trained pipeline predicts intent + confidence.
+  5. The model is saved to disk so it loads instantly on restart.
+  6. trainer.py can append new labeled examples and call retrain().
+
+INTENT LABELS:
+  greeting    → hi, hello, good morning, etc.
+  small_talk  → how are you, thanks, bye, etc.
+  services    → what do you offer, what can you do, etc.
+  pricing     → how much, what is the cost, etc.
+  booking     → how to book, are you available, etc.
+  contact     → phone number, email, how to contact, etc.
+  about       → who are you, tell me about yourself, etc.
+  social      → followers, instagram, social media count, etc.
+  tips        → makeup tips, advice, how to apply, etc.
+  events      → workshop, events, class, etc.
+  faq         → frequently asked, common questions, etc.
+  short       → give me 1 line, brief, summarise, etc.
+  steps       → step by step, how to, procedure, etc.
+  detailed    → explain fully, complete details, etc.
+  memory      → what was my first question, previous chat, etc.
+  general     → anything else
+
+RAM COST: ~15-50 MB depending on vocabulary size.
+TRAINING TIME: < 5 seconds on CPU.
+"""
+
+import os
+import re
+import pickle
+import logging
+from pathlib import Path
+from typing import Tuple, List
+
+import numpy as np
+from sklearn.pipeline import Pipeline
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.svm import LinearSVC
+from sklearn.calibration import CalibratedClassifierCV
+from sklearn.preprocessing import LabelEncoder
+from sklearn.model_selection import cross_val_score
+
+logger = logging.getLogger(__name__)
+
+# ── Model persistence path ─────────────────────────────────────────────────
+MODEL_DIR  = Path(__file__).parent / "models"
+MODEL_PATH = MODEL_DIR / "nlu_model.pkl"
+MODEL_DIR.mkdir(exist_ok=True)
+
+# ── Minimum confidence to trust the classifier ────────────────────────────
+MIN_CONFIDENCE = 0.45   # below this → fall back to rule-based
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# A) Labeled training data
+# ══════════════════════════════════════════════════════════════════════════
+
+TRAINING_DATA: List[Tuple[str, str]] = [
+
+    # ── greeting ──────────────────────────────────────────────────────────
+    ("hi", "greeting"),
+    ("hello", "greeting"),
+    ("hey there", "greeting"),
+    ("good morning", "greeting"),
+    ("good evening", "greeting"),
+    ("good afternoon", "greeting"),
+    ("hiya", "greeting"),
+    ("howdy", "greeting"),
+    ("yo", "greeting"),
+    ("sup", "greeting"),
+    ("hey!", "greeting"),
+    ("hi there", "greeting"),
+    ("hello!", "greeting"),
+    ("greetings", "greeting"),
+    ("heya", "greeting"),
+
+    # ── small_talk ────────────────────────────────────────────────────────
+    ("how are you", "small_talk"),
+    ("how r u", "small_talk"),
+    ("how are u doing", "small_talk"),
+    ("are you a bot", "small_talk"),
+    ("are you an ai", "small_talk"),
+    ("are you real", "small_talk"),
+    ("thank you", "small_talk"),
+    ("thanks", "small_talk"),
+    ("thank u", "small_talk"),
+    ("thx", "small_talk"),
+    ("ok thanks", "small_talk"),
+    ("great thanks", "small_talk"),
+    ("bye", "small_talk"),
+    ("goodbye", "small_talk"),
+    ("see you later", "small_talk"),
+    ("take care", "small_talk"),
+    ("nice to meet you", "small_talk"),
+    ("you're welcome", "small_talk"),
+    ("no problem", "small_talk"),
+    ("that's great", "small_talk"),
+    ("okay cool", "small_talk"),
+    ("awesome", "small_talk"),
+    ("noted", "small_talk"),
+    ("got it", "small_talk"),
+    ("i see", "small_talk"),
+
+    # ── services ──────────────────────────────────────────────────────────
+    ("what can you do", "services"),
+    ("what do you offer", "services"),
+    ("what services do you provide", "services"),
+    ("what are your services", "services"),
+    ("tell me about your services", "services"),
+    ("what is available", "services"),
+    ("list your services", "services"),
+    ("what kind of makeup do you do", "services"),
+    ("what do you specialize in", "services"),
+    ("which services are available", "services"),
+    ("show me your services", "services"),
+    ("can you help me with makeup", "services"),
+    ("what types of makeup do you offer", "services"),
+    ("do you do bridal makeup", "services"),
+    ("do you offer party makeup", "services"),
+    ("what makeup services do you have", "services"),
+    ("tell me about the makeup packages", "services"),
+    ("i want to know about your services", "services"),
+    ("what can you help me with", "services"),
+    ("what all do you do", "services"),
+    ("wut services u got", "services"),
+    ("yo what do u offer", "services"),
+    ("services plz", "services"),
+    ("services list", "services"),
+    ("gimme ur services", "services"),
+
+    # ── pricing ───────────────────────────────────────────────────────────
+    ("how much does it cost", "pricing"),
+    ("what is the price", "pricing"),
+    ("what are your charges", "pricing"),
+    ("pricing details please", "pricing"),
+    ("how much for bridal makeup", "pricing"),
+    ("what is the cost of party makeup", "pricing"),
+    ("can you tell me the rates", "pricing"),
+    ("what are the fees", "pricing"),
+    ("how much do you charge", "pricing"),
+    ("give me the price list", "pricing"),
+    ("what is your pricing", "pricing"),
+    ("is it expensive", "pricing"),
+    ("tell me about packages and prices", "pricing"),
+    ("how much is henna", "pricing"),
+    ("what does bridal cost", "pricing"),
+    ("cost of makeup", "pricing"),
+    ("price of bridal", "pricing"),
+    ("how much for party", "pricing"),
+    ("hw much", "pricing"),
+    ("price?", "pricing"),
+    ("cost?", "pricing"),
+    ("rates?", "pricing"),
+
+    # ── booking ───────────────────────────────────────────────────────────
+    ("how do i book", "booking"),
+    ("how to book an appointment", "booking"),
+    ("i want to book", "booking"),
+    ("can i book makeup", "booking"),
+    ("how can i schedule an appointment", "booking"),
+    ("book bridal makeup", "booking"),
+    ("are you available", "booking"),
+    ("are you free today", "booking"),
+    ("do you have any slots available", "booking"),
+    ("how to reserve a slot", "booking"),
+    ("what is the booking process", "booking"),
+    ("explain the booking steps", "booking"),
+    ("can i make an appointment", "booking"),
+    ("how do i confirm my booking", "booking"),
+    ("what information is needed to book", "booking"),
+    ("i want to schedule", "booking"),
+    ("is there availability this weekend", "booking"),
+    ("book appointment for wedding", "booking"),
+    ("how do i get otp", "booking"),
+    ("how to book online", "booking"),
+    ("wanna book", "booking"),
+    ("book pls", "booking"),
+    ("how 2 book", "booking"),
+    ("slot available?", "booking"),
+    ("free date?", "booking"),
+
+    # ── contact ───────────────────────────────────────────────────────────
+    ("what is your phone number", "contact"),
+    ("how can i contact you", "contact"),
+    ("what is your email", "contact"),
+    ("give me your contact details", "contact"),
+    ("how do i reach you", "contact"),
+    ("can i call you", "contact"),
+    ("whatsapp number please", "contact"),
+    ("how to get in touch", "contact"),
+    ("contact information", "contact"),
+    ("what is your address", "contact"),
+    ("how do i message you", "contact"),
+    ("give me your number", "contact"),
+    ("your email id", "contact"),
+    ("contact details please", "contact"),
+    ("phone number?", "contact"),
+    ("ur number?", "contact"),
+    ("contact?", "contact"),
+    ("how 2 contact", "contact"),
+
+    # ── about ─────────────────────────────────────────────────────────────
+    ("who are you", "about"),
+    ("tell me about yourself", "about"),
+    ("what is jinnichirag", "about"),
+    ("who is chirag sharma", "about"),
+    ("introduce yourself", "about"),
+    ("tell me about jinni chirag", "about"),
+    ("what is this brand about", "about"),
+    ("background of chirag sharma", "about"),
+    ("how many years of experience", "about"),
+    ("give me 1 line about you", "about"),
+    ("brief intro about you", "about"),
+    ("tell me about the artist", "about"),
+    ("who is the makeup artist", "about"),
+    ("about jinnichirag makeup artist", "about"),
+    ("what can you tell me about yourself", "about"),
+    ("describe yourself", "about"),
+    ("whos chirag", "about"),
+    ("abt u", "about"),
+    ("tell me abt urself", "about"),
+
+    # ── social ────────────────────────────────────────────────────────────
+    ("how many followers do you have", "social"),
+    ("what is your instagram", "social"),
+    ("your youtube channel", "social"),
+    ("social media links", "social"),
+    ("how many subscribers", "social"),
+    ("tiktok account", "social"),
+    ("facebook page", "social"),
+    ("what is your social media", "social"),
+    ("how many people follow you", "social"),
+    ("total following", "social"),
+    ("combined followers", "social"),
+    ("instagram followers count", "social"),
+    ("social media presence", "social"),
+    ("follow on instagram", "social"),
+    ("ur insta?", "social"),
+    ("ig link", "social"),
+    ("yt channel link", "social"),
+
+    # ── tips ──────────────────────────────────────────────────────────────
+    ("give me makeup tips", "tips"),
+    ("any advice on bridal makeup", "tips"),
+    ("how to apply makeup", "tips"),
+    ("tips for long lasting makeup", "tips"),
+    ("skincare before makeup", "tips"),
+    ("how to prepare for wedding makeup", "tips"),
+    ("professional makeup advice", "tips"),
+    ("makeup tips for beginners", "tips"),
+    ("what should i do before makeup session", "tips"),
+    ("how to make makeup last", "tips"),
+    ("tips plz", "tips"),
+    ("advice for makeup", "tips"),
+
+    # ── events ────────────────────────────────────────────────────────────
+    ("are there any upcoming events", "events"),
+    ("do you conduct workshops", "events"),
+    ("makeup class available", "events"),
+    ("any seminars", "events"),
+    ("how to attend your event", "events"),
+    ("event details", "events"),
+    ("workshop schedule", "events"),
+
+    # ── faq ───────────────────────────────────────────────────────────────
+    ("what are the frequently asked questions", "faq"),
+    ("show me the faq", "faq"),
+    ("common questions", "faq"),
+    ("what do people usually ask", "faq"),
+
+    # ── short (output mode) ───────────────────────────────────────────────
+    ("give me 1 line about your services", "short"),
+    ("brief answer please", "short"),
+    ("in short", "short"),
+    ("summarize this", "short"),
+    ("tldr", "short"),
+    ("one line answer", "short"),
+    ("quick summary", "short"),
+    ("briefly explain", "short"),
+    ("2 lines about booking", "short"),
+    ("short description", "short"),
+    ("just give me a brief", "short"),
+    ("quick answer", "short"),
+
+    # ── steps (output mode) ───────────────────────────────────────────────
+    ("explain step by step how to book", "steps"),
+    ("walk me through the process", "steps"),
+    ("step by step booking guide", "steps"),
+    ("how do i do it step by step", "steps"),
+    ("show me the steps", "steps"),
+    ("procedure for booking", "steps"),
+    ("guide me through booking", "steps"),
+    ("detailed steps please", "steps"),
+
+    # ── detailed (output mode) ────────────────────────────────────────────
+    ("give me detailed information", "detailed"),
+    ("explain everything in detail", "detailed"),
+    ("complete details about services", "detailed"),
+    ("full explanation please", "detailed"),
+    ("elaborate on bridal makeup", "detailed"),
+    ("tell me everything about booking", "detailed"),
+    ("complete answer", "detailed"),
+    ("explain fully", "detailed"),
+
+    # ── memory ────────────────────────────────────────────────────────────
+    ("what was my first question", "memory"),
+    ("what did i ask first", "memory"),
+    ("my previous question", "memory"),
+    ("what is our first chat", "memory"),
+    ("remind me what i asked", "memory"),
+    ("what have i asked so far", "memory"),
+    ("what was my last question", "memory"),
+    ("show my chat history", "memory"),
+    ("what did i say before", "memory"),
+    ("previous messages", "memory"),
+    ("what is out first chats", "memory"),    # typo variant
+    ("my first question was what", "memory"),
+
+    # ── general (catch-all) ───────────────────────────────────────────────
+    ("can you help me", "general"),
+    ("i have a question", "general"),
+    ("need some information", "general"),
+    ("just wondering", "general"),
+    ("random question", "general"),
+    ("not sure what to ask", "general"),
+]
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# B) Text preprocessing
+# ══════════════════════════════════════════════════════════════════════════
+
+def _preprocess(text: str) -> str:
+    """
+    Light preprocessing: lowercase, normalise whitespace, strip punctuation
+    except apostrophes. Keeps slang intact for TF-IDF to learn from.
+    """
+    text = text.lower().strip()
+    text = re.sub(r"[^\w\s']", " ", text)   # keep apostrophes for contractions
+    text = re.sub(r"\s+", " ", text)
+    return text
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# C) Model build + train
+# ══════════════════════════════════════════════════════════════════════════
+
+def _build_pipeline() -> Pipeline:
+    """
+    TF-IDF (word + char n-grams) → CalibratedClassifierCV(LinearSVC).
+
+    Why this combination:
+    • Word n-grams (1–3): captures phrase patterns like "how to book"
+    • Char n-grams (2–4): robust to typos and slang ("hw much" ≈ "how much")
+    • LinearSVC: fast, accurate, handles many classes well
+    • CalibratedClassifierCV: wraps LinearSVC to produce probability estimates
+    """
+    vectorizer = TfidfVectorizer(
+        analyzer       = "char_wb",   # char n-grams within word boundaries
+        ngram_range    = (2, 5),
+        max_features   = 40_000,
+        sublinear_tf   = True,
+        strip_accents  = "unicode",
+        min_df         = 1,
+    )
+    # Use a second vectorizer for word-level features and combine
+    word_vectorizer = TfidfVectorizer(
+        analyzer      = "word",
+        ngram_range   = (1, 3),
+        max_features  = 30_000,
+        sublinear_tf  = True,
+        strip_accents = "unicode",
+        min_df        = 1,
+    )
+
+    from sklearn.pipeline import FeatureUnion
+    combined = FeatureUnion([
+        ("char", vectorizer),
+        ("word", word_vectorizer),
+    ])
+
+    clf = CalibratedClassifierCV(
+        LinearSVC(
+            C             = 1.0,
+            max_iter      = 2000,
+            class_weight  = "balanced",
+        ),
+        cv = 2,
+    )
+    return Pipeline([("features", combined), ("clf", clf)])
+
+
+def train(extra_data: List[Tuple[str, str]] = None) -> Pipeline:
+    """
+    Train the intent classifier on TRAINING_DATA + any extra_data.
+    Saves the pipeline to MODEL_PATH.
+    Returns the trained pipeline.
+    """
+    data = list(TRAINING_DATA)
+    if extra_data:
+        data.extend(extra_data)
+
+    texts  = [_preprocess(t) for t, _ in data]
+    labels = [l for _, l in data]
+
+    pipeline = _build_pipeline()
+    pipeline.fit(texts, labels)
+
+    # Quick cross-val score for diagnostics
+    scores = cross_val_score(pipeline, texts, labels, cv=2, scoring="accuracy")
+    logger.info(f"[NLU] Trained on {len(texts)} examples. "
+                f"CV accuracy: {scores.mean():.2f} ± {scores.std():.2f}")
+    print(f"[NLU] Trained on {len(texts)} examples. "
+          f"CV accuracy: {scores.mean():.2f} ± {scores.std():.2f}")
+
+    # Persist
+    with open(MODEL_PATH, "wb") as f:
+        pickle.dump(pipeline, f)
+    print(f"[NLU] Model saved to {MODEL_PATH}")
+
+    return pipeline
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# D) Inference
+# ══════════════════════════════════════════════════════════════════════════
+
+_pipeline: Pipeline | None = None
+
+
+def _load_or_train() -> Pipeline:
+    """Return the cached pipeline, loading from disk or training if needed."""
+    global _pipeline
+    if _pipeline is not None:
+        return _pipeline
+
+    if MODEL_PATH.exists():
+        with open(MODEL_PATH, "rb") as f:
+            _pipeline = pickle.load(f)
+        print(f"[NLU] Model loaded from {MODEL_PATH}")
+    else:
+        print("[NLU] No saved model found — training now...")
+        _pipeline = train()
+
+    return _pipeline
+
+
+def predict_intent(message: str) -> dict:
+    """
+    Predict intent for a user message.
+
+    Returns:
+        {
+            "intent":     str,    # predicted intent label
+            "confidence": float,  # 0.0 – 1.0
+            "trusted":    bool,   # True if confidence >= MIN_CONFIDENCE
+        }
+    """
+    pipeline = _load_or_train()
+    processed = _preprocess(message)
+
+    # Predict probabilities
+    proba = pipeline.predict_proba([processed])[0]
+    classes = pipeline.classes_
+    best_idx = int(np.argmax(proba))
+    intent   = classes[best_idx]
+    confidence = float(proba[best_idx])
+
+    return {
+        "intent":     intent,
+        "confidence": round(confidence, 3),
+        "trusted":    confidence >= MIN_CONFIDENCE,
+    }
+
+
+def retrain(extra_data: List[Tuple[str, str]] = None):
+    """
+    Public API: retrain the model and refresh the in-memory cache.
+    Called by trainer.py after accumulating new labeled examples.
+    """
+    global _pipeline
+    _pipeline = train(extra_data)
+    print("[NLU] Model retrained and cache refreshed.")
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# E) Map NLU intent → system intent_mode used by the rest of the pipeline
+# ══════════════════════════════════════════════════════════════════════════
+
+# NLU labels that map 1:1 to intent_mode strings
+_DIRECT_MAP = {
+    "greeting":  "greeting",
+    "small_talk":"small_talk",
+    "short":     "short",
+    "steps":     "steps",
+    "detailed":  "detailed",
+    "memory":    "memory",
+    "general":   "default",
+}
+
+# NLU labels that are KB content-type signals → become "default" intent_mode
+# (the summarizer will figure out the content type from retrieved chunks)
+_KB_INTENTS = {
+    "services", "pricing", "booking", "contact",
+    "about", "social", "tips", "events", "faq",
+}
+
+
+def nlu_intent_to_mode(nlu_result: dict) -> str:
+    """
+    Convert NLU prediction to the intent_mode string used by app.py.
+
+    If confidence is too low, returns None so the rule-based fallback runs.
+    """
+    if not nlu_result["trusted"]:
+        return None   # signal to fall back to rule-based detect_intent_mode()
+
+    label = nlu_result["intent"]
+
+    if label in _DIRECT_MAP:
+        return _DIRECT_MAP[label]
+
+    if label in _KB_INTENTS:
+        return "default"   # let KB + summarizer handle content type
+
+    return "default"
+
+
+def nlu_content_hint(nlu_result: dict) -> str | None:
+    """
+    If the NLU classified a KB content-type intent with high confidence,
+    return it as a hint to summarizer.detect_content_type().
+    Returns None otherwise.
+    """
+    if not nlu_result["trusted"]:
+        return None
+    label = nlu_result["intent"]
+    return label if label in _KB_INTENTS else None
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# F) CLI — run directly to train or test
+# ══════════════════════════════════════════════════════════════════════════
+
+if __name__ == "__main__":
+    import sys
+
+    if len(sys.argv) > 1 and sys.argv[1] == "train":
+        train()
+    else:
+        # Interactive test mode
+        print("NLU Test Mode. Type a message to classify it (Ctrl+C to quit).\n")
+        _load_or_train()
+        while True:
+            try:
+                msg = input("You: ").strip()
+                if msg:
+                    result = predict_intent(msg)
+                    print(f"  Intent: {result['intent']}  "
+                          f"Confidence: {result['confidence']:.3f}  "
+                          f"Trusted: {result['trusted']}")
+            except KeyboardInterrupt:
+                break
+_______
+trainer.py:
+
+"""
+trainer.py — Continuous learning: interaction logging + NLU retraining.
+
+WHY THIS EXISTS:
+  The NLU classifier starts with handcrafted training data.
+  Real users will use phrasings we haven't seen.
+  This module:
+    1. Logs every chat interaction to MongoDB (message + predicted intent + emotion)
+    2. Provides a correction API so admins can label misclassified messages
+    3. Periodically retrains the NLU model with accumulated real examples
+    4. Detects KB gaps (queries that hit fallback repeatedly) and flags them
+
+HOW TO USE:
+  • Automatic: trainer.log_interaction() is called in app.py on every request.
+  • Manual retraining: POST /admin/retrain  or  python trainer.py retrain
+  • Review gaps: python trainer.py gaps
+
+CONTINUOUS LEARNING FLOW:
+  User sends message
+    ↓
+  log_interaction() saves it to MongoDB
+    ↓
+  Admin reviews misclassified messages via /admin/corrections
+    ↓
+  Admin labels them via add_correction()
+    ↓
+  retrain_if_due() checks if N new corrections have accumulated
+    ↓
+  If yes → pulls all labeled data → calls nlu.retrain()
+    ↓
+  New model saved to disk, in-memory cache refreshed
+    ↓
+  Chatbot immediately uses improved model
+
+RAM COST: < 5 MB (just DB reads/writes)
+"""
+
+import logging
+from datetime import datetime, timezone, timedelta
+from typing import Optional
+
+logger = logging.getLogger(__name__)
+
+# ── Config ─────────────────────────────────────────────────────────────────
+RETRAIN_THRESHOLD   = 20    # retrain after N new labeled corrections
+MIN_FALLBACK_COUNT  = 5     # flag a query as KB gap after N fallback hits
+LOG_COLLECTION      = "interaction_logs"
+CORRECTION_COLLECTION = "nlu_corrections"
+GAP_COLLECTION      = "kb_gaps"
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# A) Database helpers
+# ══════════════════════════════════════════════════════════════════════════
+
+def _now_utc() -> datetime:
+    return datetime.now(timezone.utc)
+
+
+def _col_logs():
+    from agent.db import get_db
+    return get_db()[LOG_COLLECTION]
+
+
+def _col_corrections():
+    from agent.db import get_db
+    return get_db()[CORRECTION_COLLECTION]
+
+
+def _col_gaps():
+    from agent.db import get_db
+    return get_db()[GAP_COLLECTION]
+
+
+def _ensure_indexes():
+    """Create indexes for the trainer collections."""
+    try:
+        from pymongo import ASCENDING
+        _col_logs().create_index([("created_at", ASCENDING)], background=True)
+        _col_corrections().create_index(
+            [("message", ASCENDING)], unique=False, background=True
+        )
+        _col_corrections().create_index(
+            [("used_for_training", ASCENDING)], background=True
+        )
+        _col_gaps().create_index(
+            [("query", ASCENDING)], unique=True, background=True
+        )
+    except Exception as e:
+        logger.warning(f"[TRAINER] Index creation error: {e}")
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# B) Interaction logging
+# ══════════════════════════════════════════════════════════════════════════
+
+def log_interaction(
+    session_id:      str,
+    user_message:    str,
+    intent_mode:     str,
+    emotion_label:   str,
+    answer_text:     str,
+    used_sources:    int,
+    best_score:      float,
+    was_fallback:    bool,
+    nlu_intent:      Optional[str]  = None,
+    nlu_confidence:  Optional[float]= None,
+    corrected_query: Optional[str]  = None,
+) -> None:
+    """
+    Log a single chat interaction to MongoDB.
+    Non-blocking: errors are caught and logged but do not crash the server.
+    """
+    try:
+        doc = {
+            "session_id":      session_id,
+            "user_message":    user_message,
+            "corrected_query": corrected_query or user_message,
+            "intent_mode":     intent_mode,
+            "nlu_intent":      nlu_intent,
+            "nlu_confidence":  nlu_confidence,
+            "emotion_label":   emotion_label,
+            "used_sources":    used_sources,
+            "best_score":      best_score,
+            "was_fallback":    was_fallback,
+            "answer_preview":  answer_text[:200] if answer_text else "",
+            "created_at":      _now_utc(),
+        }
+        _col_logs().insert_one(doc)
+
+        # If this was a fallback, track it as a potential KB gap
+        if was_fallback:
+            _track_kb_gap(user_message)
+
+    except Exception as e:
+        logger.warning(f"[TRAINER] log_interaction error: {e}")
+
+
+def _track_kb_gap(query: str) -> None:
+    """
+    Increment the fallback counter for a query.
+    If it exceeds MIN_FALLBACK_COUNT, flag it as a KB gap.
+    """
+    try:
+        result = _col_gaps().find_one_and_update(
+            {"query": query.lower()[:200]},
+            {
+                "$inc": {"count": 1},
+                "$set": {"last_seen": _now_utc()},
+                "$setOnInsert": {
+                    "query":      query.lower()[:200],
+                    "created_at": _now_utc(),
+                    "flagged":    False,
+                },
+            },
+            upsert=True,
+            return_document=True,
+        )
+        if result and result.get("count", 0) >= MIN_FALLBACK_COUNT and not result.get("flagged"):
+            _col_gaps().update_one(
+                {"query": query.lower()[:200]},
+                {"$set": {"flagged": True, "flagged_at": _now_utc()}}
+            )
+            print(f"[TRAINER] KB gap flagged: '{query[:60]}'")
+    except Exception as e:
+        logger.warning(f"[TRAINER] _track_kb_gap error: {e}")
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# C) Correction API (admin labels misclassified messages)
+# ══════════════════════════════════════════════════════════════════════════
+
+def add_correction(message: str, correct_intent: str) -> bool:
+    """
+    Label a message with the correct intent.
+    This becomes a training example for the next NLU retraining.
+
+    Args:
+        message:        The user's original message.
+        correct_intent: The correct intent label (e.g. "services", "booking").
+
+    Returns:
+        True if saved successfully.
+    """
+    valid_intents = {
+        "greeting", "small_talk", "services", "pricing", "booking",
+        "contact", "about", "social", "tips", "events", "faq",
+        "short", "steps", "detailed", "memory", "general",
+    }
+    if correct_intent not in valid_intents:
+        logger.warning(f"[TRAINER] Unknown intent: {correct_intent}")
+        return False
+
+    try:
+        _col_corrections().insert_one({
+            "message":           message,
+            "correct_intent":    correct_intent,
+            "used_for_training": False,
+            "created_at":        _now_utc(),
+        })
+        print(f"[TRAINER] Correction saved: '{message[:50]}' → {correct_intent}")
+
+        # Check if we should retrain now
+        retrain_if_due()
+        return True
+
+    except Exception as e:
+        logger.warning(f"[TRAINER] add_correction error: {e}")
+        return False
+
+
+def get_pending_corrections() -> list:
+    """Return all corrections not yet used for training."""
+    try:
+        docs = list(_col_corrections().find({"used_for_training": False}))
+        return [(d["message"], d["correct_intent"]) for d in docs]
+    except Exception as e:
+        logger.warning(f"[TRAINER] get_pending_corrections error: {e}")
+        return []
+
+
+def _mark_corrections_used(correction_ids: list) -> None:
+    """Mark corrections as used for training."""
+    try:
+        from bson import ObjectId
+        _col_corrections().update_many(
+            {"_id": {"$in": correction_ids}},
+            {"$set": {"used_for_training": True, "trained_at": _now_utc()}}
+        )
+    except Exception as e:
+        logger.warning(f"[TRAINER] _mark_corrections_used error: {e}")
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# D) Retraining logic
+# ══════════════════════════════════════════════════════════════════════════
+
+def retrain_if_due() -> bool:
+    """
+    Check if enough new corrections have accumulated to warrant retraining.
+    If yes, pull all pending corrections and call nlu.retrain().
+
+    Returns:
+        True if retraining was triggered.
+    """
+    try:
+        pending_count = _col_corrections().count_documents(
+            {"used_for_training": False}
+        )
+
+        if pending_count < RETRAIN_THRESHOLD:
+            logger.debug(f"[TRAINER] {pending_count}/{RETRAIN_THRESHOLD} corrections — no retrain yet")
+            return False
+
+        print(f"[TRAINER] {pending_count} new corrections — triggering NLU retraining...")
+        return force_retrain()
+
+    except Exception as e:
+        logger.warning(f"[TRAINER] retrain_if_due error: {e}")
+        return False
+
+
+def force_retrain() -> bool:
+    """
+    Force an immediate NLU retraining regardless of threshold.
+    Pulls ALL labeled corrections from MongoDB and merges with base training data.
+
+    Returns:
+        True if successful.
+    """
+    try:
+        # Get all corrections (including already-used ones, for full retraining)
+        all_docs = list(_col_corrections().find({}))
+        extra_data = [(d["message"], d["correct_intent"]) for d in all_docs]
+
+        if not extra_data:
+            print("[TRAINER] No corrections to train on — retraining with base data only")
+
+        from trainnlp.nlu import retrain
+        retrain(extra_data=extra_data if extra_data else None)
+
+        # Mark pending ones as used
+        pending_ids = [
+            d["_id"] for d in all_docs
+            if not d.get("used_for_training", False)
+        ]
+        if pending_ids:
+            _mark_corrections_used(pending_ids)
+
+        print(f"[TRAINER] Retraining complete with {len(extra_data)} correction examples.")
+        return True
+
+    except Exception as e:
+        logger.error(f"[TRAINER] force_retrain error: {e}")
+        return False
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# E) Gap reporting
+# ══════════════════════════════════════════════════════════════════════════
+
+def get_kb_gaps(limit: int = 20) -> list:
+    """
+    Return flagged KB gaps — queries the chatbot couldn't answer.
+    These should be reviewed and added to the knowledge base.
+    """
+    try:
+        docs = list(
+            _col_gaps()
+            .find({"flagged": True})
+            .sort("count", -1)
+            .limit(limit)
+        )
+        return [
+            {
+                "query":      d.get("query", ""),
+                "count":      d.get("count", 0),
+                "flagged_at": d.get("flagged_at", ""),
+            }
+            for d in docs
+        ]
+    except Exception as e:
+        logger.warning(f"[TRAINER] get_kb_gaps error: {e}")
+        return []
+
+
+def get_recent_interactions(limit: int = 50) -> list:
+    """Return recent chat interactions for review."""
+    try:
+        docs = list(
+            _col_logs()
+            .find({})
+            .sort("created_at", -1)
+            .limit(limit)
+        )
+        return [
+            {
+                "message":       d.get("user_message", ""),
+                "intent":        d.get("intent_mode", ""),
+                "nlu_intent":    d.get("nlu_intent", ""),
+                "nlu_conf":      d.get("nlu_confidence", 0.0),
+                "emotion":       d.get("emotion_label", ""),
+                "was_fallback":  d.get("was_fallback", False),
+                "created_at":    d.get("created_at", ""),
+            }
+            for d in docs
+        ]
+    except Exception as e:
+        logger.warning(f"[TRAINER] get_recent_interactions error: {e}")
+        return []
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# F) Startup initialisation
+# ══════════════════════════════════════════════════════════════════════════
+
+def init_trainer() -> None:
+    """
+    Call this on app startup to:
+    1. Create DB indexes
+    2. Ensure the NLU model is loaded/trained
+    """
+    _ensure_indexes()
+    # Pre-load NLU model in background
+    try:
+        from trainnlp.nlu import _load_or_train
+        _load_or_train()
+        print("[TRAINER] NLU model ready.")
+    except Exception as e:
+        logger.warning(f"[TRAINER] NLU pre-load error: {e}")
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# G) CLI
+# ══════════════════════════════════════════════════════════════════════════
+
+if __name__ == "__main__":
+    import sys
+    import json
+
+    cmd = sys.argv[1] if len(sys.argv) > 1 else "help"
+
+    if cmd == "retrain":
+        print("Forcing NLU retraining...")
+        force_retrain()
+
+    elif cmd == "gaps":
+        gaps = get_kb_gaps(limit=30)
+        if not gaps:
+            print("No KB gaps flagged yet.")
+        else:
+            print(f"\n{'Query':<50} {'Hits':>6}")
+            print("-" * 58)
+            for g in gaps:
+                print(f"{g['query'][:48]:<50} {g['count']:>6}")
+
+    elif cmd == "recent":
+        interactions = get_recent_interactions(limit=20)
+        if not interactions:
+            print("No interactions logged yet.")
+        else:
+            print(json.dumps(interactions, indent=2, default=str))
+
+    elif cmd == "correct":
+        # python trainer.py correct "your message" intent_label
+        if len(sys.argv) < 4:
+            print("Usage: python trainer.py correct '<message>' <intent>")
+        else:
+            msg    = sys.argv[2]
+            intent = sys.argv[3]
+            ok = add_correction(msg, intent)
+            print(f"Correction {'saved' if ok else 'FAILED'}.")
+
+    else:
+        print("""
+Usage: python trainer.py <command>
+
+Commands:
+  retrain              Force NLU model retraining
+  gaps                 Show unanswered query gaps (add to KB)
+  recent               Show recent chat interactions
+  correct '<msg>' <intent>   Label a message with correct intent
+""")
+____________
+Below is structure:
+
+(venv) rupesh@rupesh-Inspiron-3501:~/Desktop/chatbot$ tree -I "venv|__pycache__"
+.
+├── agent
+│   ├── chunker.py
+│   ├── config.py
+│   ├── db.py
+│   ├── embedder.py
+│   ├── emotion.py
+│   ├── formatter.py
+│   ├── __init__.py
+│   ├── memory.py
+│   ├── retriever.py
+│   ├── schemas.py
+│   ├── summarizer.py
+│   └── utils.py
+├── app.py
+├── frontend
+│   └── index.html
+├── requirements.txt
+└── trainnlp
+    ├── emotion_model.py
+    ├── fuzzy_match.py
+    ├── models
+    │   └── nlu_model.pkl
+    ├── nlu.py
+    └── trainer.py
+
+______________
+chunker.py:
+
+"""
+chunker.py — Paragraph-aware document chunking.
+
+ROOT CAUSE OF PREVIOUS BUG:
+  Character-level sliding window (start=0, end=400, step=320) was cutting
+  text mid-word: "Booking" → chunk ends at "B", next chunk starts "ooking..."
+  This created garbage fragments like "ooking request is reviewed manually"
+  and "n the service price?" in ALL retrieved answers.
+
+THE FIX — Paragraph-aware chunking:
+  1. Split document text on blank lines / newlines to get natural paragraphs.
+  2. Group consecutive paragraphs until the chunk would exceed CHUNK_MAX_CHARS.
+  3. Start a new chunk — NEVER cut inside a sentence or word.
+  4. Result: every chunk is a complete, readable block of text.
+
+IMPORTANT: After deploying this fix, you MUST clear old chunks + embeddings
+from MongoDB so they get rebuilt with clean boundaries:
+  db.kb_chunks.deleteMany({})
+  db.kb_embeddings.deleteMany({})
+Then restart the server — it will rechunk and re-embed automatically.
+"""
+
+from datetime import datetime, timezone
+from typing import List
+
+from agent.config import CHUNK_MAX_CHARS, CHUNK_MIN_CHARS
+from agent.db import col_documents, col_chunks
+
+
+def _now_utc() -> datetime:
+    return datetime.now(timezone.utc)
+
+
+# ── Paragraph-aware splitter ───────────────────────────────────────────────
+
+def _split_into_paragraphs(text: str) -> List[str]:
+    """
+    Split raw document text into natural paragraphs.
+    A paragraph is any non-empty block separated by one or more blank lines,
+    or any line that ends with a colon (section header), or list items.
+    """
+    import re
+    # Normalise Windows line endings
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
+
+    # Split on double newlines (blank lines between paragraphs)
+    raw_blocks = re.split(r"\n{2,}", text.strip())
+
+    paragraphs = []
+    for block in raw_blocks:
+        block = block.strip()
+        if not block:
+            continue
+        # If the block itself contains single newlines, keep it as one
+        # paragraph since those are usually list items belonging together
+        if len(block) <= CHUNK_MAX_CHARS:
+            paragraphs.append(block)
+        else:
+            # Block is too large — split further on single newlines
+            lines = block.split("\n")
+            current = []
+            current_len = 0
+            for line in lines:
+                line = line.strip()
+                if not line:
+                    continue
+                if current_len + len(line) + 1 > CHUNK_MAX_CHARS and current:
+                    paragraphs.append("\n".join(current))
+                    current = [line]
+                    current_len = len(line)
+                else:
+                    current.append(line)
+                    current_len += len(line) + 1
+            if current:
+                paragraphs.append("\n".join(current))
+
+    return paragraphs
+
+
+def _group_paragraphs_into_chunks(paragraphs: List[str]) -> List[str]:
+    """
+    Group consecutive paragraphs into chunks ≤ CHUNK_MAX_CHARS.
+    Never splits inside a paragraph — whole paragraphs only.
+    """
+    chunks = []
+    current_parts: List[str] = []
+    current_len = 0
+
+    for para in paragraphs:
+        para_len = len(para)
+        # If adding this paragraph would overflow the chunk, flush current
+        if current_len + para_len + 2 > CHUNK_MAX_CHARS and current_parts:
+            chunk_text = "\n\n".join(current_parts).strip()
+            if len(chunk_text) >= CHUNK_MIN_CHARS:
+                chunks.append(chunk_text)
+            current_parts = [para]
+            current_len = para_len
+        else:
+            current_parts.append(para)
+            current_len += para_len + 2
+
+    # Flush remaining
+    if current_parts:
+        chunk_text = "\n\n".join(current_parts).strip()
+        if len(chunk_text) >= CHUNK_MIN_CHARS:
+            chunks.append(chunk_text)
+
+    return chunks
+
+
+# ── Timestamp helpers ──────────────────────────────────────────────────────
+
+def _get_existing_chunk_timestamp(doc_id: str) -> datetime | None:
+    first = col_chunks().find_one({"doc_id": doc_id}, {"updated_at": 1})
+    return first["updated_at"] if first else None
+
+
+def _delete_chunks_for_doc(doc_id: str) -> None:
+    from agent.db import col_embeddings
+    chunk_ids = [str(c["_id"]) for c in col_chunks().find({"doc_id": doc_id}, {"_id": 1})]
+    if chunk_ids:
+        col_embeddings().delete_many({"chunk_id": {"$in": chunk_ids}})
+    col_chunks().delete_many({"doc_id": doc_id})
+
+
+# ── Main public function ───────────────────────────────────────────────────
+
+def ensure_chunks_for_all_docs() -> int:
+    """
+    Lazily rechunk any new or updated documents.
+    Uses paragraph-aware chunking — no more mid-word cuts.
+    Returns number of documents (re-)chunked.
+    """
+    processed = 0
+    cursor = col_documents().find(
+        {},
+        {"_id": 1, "title": 1, "content": 1, "text": 1, "updated_at": 1, "is_active": 1}
+    )
+
+    for doc in cursor:
+        if doc.get("is_active") is False:
+            continue
+
+        doc_id      = str(doc["_id"])
+        doc_updated = doc.get("updated_at")
+        title       = doc.get("title", "")
+        text        = (doc.get("content") or doc.get("text") or "").strip()
+
+        if not text:
+            continue
+
+        # Check freshness
+        chunk_ts = _get_existing_chunk_timestamp(doc_id)
+        if chunk_ts is not None:
+            if doc_updated is None:
+                continue   # no update timestamp → assume fresh
+            ts = chunk_ts.replace(tzinfo=timezone.utc) if chunk_ts.tzinfo is None else chunk_ts
+            du = doc_updated.replace(tzinfo=timezone.utc) if doc_updated.tzinfo is None else doc_updated
+            if ts >= du:
+                continue   # still fresh
+
+        # Rebuild chunks
+        _delete_chunks_for_doc(doc_id)
+
+        paragraphs = _split_into_paragraphs(text)
+        raw_chunks = _group_paragraphs_into_chunks(paragraphs)
+        now = _now_utc()
+
+        if raw_chunks:
+            col_chunks().insert_many([
+                {
+                    "doc_id":      doc_id,
+                    "title":       title,
+                    "chunk_index": idx,
+                    "chunk_text":  chunk_text,
+                    "updated_at":  now,
+                }
+                for idx, chunk_text in enumerate(raw_chunks)
+            ], ordered=False)
+
+        print(f"[CHUNKER] '{title}' → {len(raw_chunks)} paragraph-chunks")
+        processed += 1
+
+    return processed
+_________
+config.py:
+
+"""
+config.py — All constants, limits, and settings.
+"""
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+# ── MongoDB ────────────────────────────────────────────────────────────────
+MONGODB_URI: str = os.getenv("MONGO_URI", os.getenv("MONGODB_URI", ""))
+DB_NAME:     str = os.getenv("MONGODB_DB_NAME", os.getenv("DB_NAME", "jinni_db"))
+COL_DOCUMENTS  = "knowledge_base"
+COL_CHUNKS     = "kb_chunks"
+COL_EMBEDDINGS = "kb_embeddings"
+COL_SESSIONS   = "sessions"
+
+# ── Embedding ──────────────────────────────────────────────────────────────
+EMBEDDING_MODEL  = "sentence-transformers/all-MiniLM-L6-v2"
+EMBEDDING_DIM    = 384
+EMBED_BATCH_SIZE = 16
+
+# ── Retrieval ──────────────────────────────────────────────────────────────
+TOP_K                = 5
+SIM_THRESHOLD        = 0.20
+MAX_CHUNKS_TO_SEARCH = 500
+MAX_CONTEXT_CHARS    = 6000
+
+# ── Chunking ───────────────────────────────────────────────────────────────
+CHUNK_MAX_CHARS  = 800
+CHUNK_MIN_CHARS  = 60
+
+# ── Session memory ─────────────────────────────────────────────────────────
+MAX_USER_MESSAGES     = 10   # raised: more history for better follow-up context
+MAX_ASSISTANT_ANSWERS = 5
+SESSION_TTL_MINUTES   = 60   # raised: longer session window
+
+# ── Summarisation ──────────────────────────────────────────────────────────
+MAX_SUMMARY_SENTENCES = 10
+
+# ── Emotion detection (VADER compound score) ──────────────────────────────
+VADER_ANGRY_THRESHOLD = -0.55
+VADER_SAD_UPPER       = -0.25
+VADER_HAPPY_THRESHOLD =  0.35
+
+# ── Confusion keywords (used in emotion.py for refined pattern) ────────────
+CONFUSION_KEYWORDS = [
+    "why", "explain", "??", "confused",
+    "i don't understand", "i dont understand",
+    "clarify", "meaning", "means", "define",
+    "unclear", "not sure", "not working", "not understanding",
+    "can you explain", "could you explain",
+]
+____________
+db.py:
+"""
+db.py — MongoDB connection singleton and collection helpers.
+Only ONE connection is created for the entire app lifetime.
+"""
+
+from pymongo import MongoClient, ASCENDING
+from pymongo.collection import Collection
+from pymongo.database import Database
+
+from agent.config import (
+    MONGODB_URI, DB_NAME,
+    COL_DOCUMENTS, COL_CHUNKS, COL_EMBEDDINGS, COL_SESSIONS,
+)
+
+# ── Singleton connection ───────────────────────────────────────────────────
+_client: MongoClient | None = None
+_db: Database | None = None
+
+
+def get_db() -> Database:
+    """Return (and lazily create) the shared MongoDB database handle."""
+    global _client, _db
+    if _db is None:
+        _client = MongoClient(MONGODB_URI, serverSelectionTimeoutMS=10_000)
+        _db = _client[DB_NAME]
+        _ensure_indexes(_db)
+    return _db
+
+
+def _ensure_indexes(db: Database) -> None:
+    """Create indexes once so queries are fast even with many documents."""
+
+    # kb_chunks: look up chunks by doc_id quickly
+    db[COL_CHUNKS].create_index(
+        [("doc_id", ASCENDING)], background=True
+    )
+    # kb_embeddings: look up embeddings by chunk_id quickly
+    db[COL_EMBEDDINGS].create_index(
+        [("chunk_id", ASCENDING)], unique=True, background=True
+    )
+    # sessions: look up sessions by session_id quickly
+    db[COL_SESSIONS].create_index(
+        [("session_id", ASCENDING)], unique=True, background=True
+    )
+    # sessions: auto-expire documents using TTL index on expires_at
+    db[COL_SESSIONS].create_index(
+        [("expires_at", ASCENDING)],
+        expireAfterSeconds=0,
+        background=True,
+    )
+
+
+# ── Convenience accessors ──────────────────────────────────────────────────
+
+def col_documents() -> Collection:
+    return get_db()[COL_DOCUMENTS]
+
+def col_chunks() -> Collection:
+    return get_db()[COL_CHUNKS]
+
+def col_embeddings() -> Collection:
+    return get_db()[COL_EMBEDDINGS]
+
+def col_sessions() -> Collection:
+    return get_db()[COL_SESSIONS]
+_________
+embedder.py:
+
+"""
+embedder.py — Local CPU-only embedding generation and storage.
+
+Model: sentence-transformers/all-MiniLM-L6-v2  (dim=384)
+
+Rules:
+  • Model is loaded ONCE as a global singleton (cached in RAM).
+  • Embeddings are computed in small batches to save RAM.
+  • Embeddings are stored as float32 lists in MongoDB.
+  • Only MISSING embeddings are computed (lazy / incremental).
+  • A single query embedding is computed per /chat request.
+"""
+
+from datetime import datetime, timezone
+from typing import List
+
+import numpy as np
+from sentence_transformers import SentenceTransformer
+
+from agent.config import EMBEDDING_MODEL, EMBEDDING_DIM, EMBED_BATCH_SIZE
+from agent.db import col_chunks, col_embeddings
+
+# ── Singleton model (loaded once at first use) ─────────────────────────────
+_model: SentenceTransformer | None = None
+
+
+def _get_model() -> SentenceTransformer:
+    global _model
+    if _model is None:
+        # device="cpu" is explicit to avoid GPU errors on Render
+        _model = SentenceTransformer(EMBEDDING_MODEL, device="cpu")
+    return _model
+
+
+# ── Helpers ────────────────────────────────────────────────────────────────
+
+def _now_utc() -> datetime:
+    return datetime.now(timezone.utc)
+
+
+def _embed_texts(texts: List[str]) -> np.ndarray:
+    """
+    Embed a list of strings in one batch.
+    Returns shape (N, EMBEDDING_DIM) float32 numpy array.
+    """
+    model = _get_model()
+    # normalize_embeddings=True gives unit vectors → cosine sim = dot product
+    vecs = model.encode(
+        texts,
+        batch_size=EMBED_BATCH_SIZE,
+        normalize_embeddings=True,
+        show_progress_bar=False,
+        convert_to_numpy=True,
+    )
+    return vecs.astype(np.float32)
+
+
+# ── Main public functions ──────────────────────────────────────────────────
+
+def ensure_embeddings_for_all_chunks() -> int:
+    """
+    Scan `kb_chunks` and generate embeddings for any chunk that does
+    not yet have one stored in `kb_embeddings`.
+
+    Uses batched inserts to keep RAM usage low.
+    Returns the number of new embeddings created.
+    """
+    # Find all chunk_ids that already have an embedding
+    existing_ids = set(
+        doc["chunk_id"]
+        for doc in col_embeddings().find({}, {"chunk_id": 1, "_id": 0})
+    )
+
+    # Collect chunks that need embedding
+    pending_chunks = []
+    cursor = col_chunks().find({}, {"_id": 1, "chunk_text": 1})
+
+    for chunk in cursor:
+        chunk_id = str(chunk["_id"])
+        if chunk_id not in existing_ids:
+            pending_chunks.append({"id": chunk_id, "text": chunk["chunk_text"]})
+
+    if not pending_chunks:
+        return 0
+
+    created = 0
+    now = _now_utc()
+
+    # Process in small batches to avoid OOM
+    for i in range(0, len(pending_chunks), EMBED_BATCH_SIZE):
+        batch = pending_chunks[i : i + EMBED_BATCH_SIZE]
+        texts = [b["text"] for b in batch]
+        vecs  = _embed_texts(texts)
+
+        embedding_docs = [
+            {
+                "chunk_id":      batch[j]["id"],
+                "embedding":     vecs[j].tolist(),   # list of floats for BSON
+                "embedding_dim": EMBEDDING_DIM,
+                "updated_at":    now,
+            }
+            for j in range(len(batch))
+        ]
+
+        col_embeddings().insert_many(embedding_docs, ordered=False)
+        created += len(embedding_docs)
+
+    return created
+
+
+def embed_query(query: str) -> np.ndarray:
+    """
+    Embed a single query string.
+    Returns a float32 numpy vector of shape (EMBEDDING_DIM,).
+    """
+    vec = _embed_texts([query])
+    return vec[0]   # shape (384,)
+_______
+emotion.py:
+"""
+emotion.py — Deterministic, rule-based emotion detection.
+
+v2.3 — Complete unified version.
+
+HOW IT WORKS:
+  1. Excitement keywords  → excited
+  2. Service override     → if message is a business/service query, skip confusion
+  3. Confusion keywords   → confused  (word-boundary matched, no false positives)
+  4. VADER compound score → angry / sad / happy / neutral
+
+FIXES ACROSS VERSIONS:
+  • "What is your services?"     → neutral  (not confused)
+  • "Are you free today?"        → neutral  (not confused)
+  • "Give me 1 line about you"   → neutral  (not confused)
+  • "What can you do"            → neutral  (not confused)
+  • "Why is it not understanding my language?" → confused ✓
+  • Real confusion ("I don't understand", "clarify", "why") → confused ✓
+"""
+
+import re
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+from agent.config import (
+    VADER_ANGRY_THRESHOLD,
+    VADER_SAD_UPPER,
+    VADER_HAPPY_THRESHOLD,
+)
+
+_analyser = SentimentIntensityAnalyzer()
+
+# ── Confusion keywords — tightly scoped, no generic "what"/"how" ───────────
+_CONFUSION_KEYWORDS = [
+    "why", "explain", "confused",
+    "i don't understand", "i dont understand",
+    "clarify", "meaning", "means", "define",
+    "unclear", "not sure", "not working", "not understanding",
+    "can you explain", "could you explain",
+    "makes no sense", "doesn't make sense", "doesnt make sense",
+    "i am lost", "i'm lost", "lost me",
+]
+
+_CONFUSION_PATTERN = re.compile(
+    r'\b(' + '|'.join(re.escape(kw) for kw in _CONFUSION_KEYWORDS) + r')\b',
+    re.IGNORECASE,
+)
+
+# ── Service/business override — these queries are NEVER confused ───────────
+# If the message contains any of these, skip confusion detection entirely.
+_SERVICE_OVERRIDE_PATTERN = re.compile(
+    r'\b(service|services|book|booking|price|cost|offer|provide|'
+    r'available|appointment|bridal|makeup|henna|party|reception|'
+    r'chirag|jinni|artist|contact|phone|email|instagram|youtube|'
+    r'facebook|tiktok|follower|package|wedding|'
+    r'give me|tell me|what can|what do|about you|'
+    r'1 line|one line|2 lines|brief|short|intro|'
+    r'your services|your price|your phone)\b',
+    re.IGNORECASE,
+)
+
+# ── Excitement — checked first ─────────────────────────────────────────────
+_EXCITEMENT_PATTERN = re.compile(
+    r'\b(excited|cant wait|can\'t wait|looking forward|amazing|wonderful|'
+    r'love it|awesome|fantastic|wow|yay|so happy|thrilled|great news|'
+    r'super excited|very excited)\b',
+    re.IGNORECASE,
+)
+
+
+def detect_emotion(message: str) -> dict:
+    """
+    Return {"label": str, "confidence": float}
+
+    Labels: excited | confused | angry | sad | happy | neutral
+    """
+    # 1. Excitement
+    if _EXCITEMENT_PATTERN.search(message):
+        return {"label": "excited", "confidence": 0.82}
+
+    # 2. Service override — these are business questions, never confused
+    if _SERVICE_OVERRIDE_PATTERN.search(message):
+        # Still run VADER for happy/sad/angry detection
+        scores   = _analyser.polarity_scores(message)
+        compound = scores["compound"]
+        if compound <= VADER_ANGRY_THRESHOLD:
+            return {"label": "angry",   "confidence": round(min(1.0, abs(compound)), 2)}
+        if compound >= VADER_HAPPY_THRESHOLD:
+            return {"label": "happy",   "confidence": round(min(1.0, compound), 2)}
+        return {"label": "neutral", "confidence": 0.60}
+
+    # 3. Confusion keywords
+    if _CONFUSION_PATTERN.search(message):
+        return {"label": "confused", "confidence": 0.85}
+
+    # 4. VADER sentiment
+    scores   = _analyser.polarity_scores(message)
+    compound = scores["compound"]
+
+    if compound <= VADER_ANGRY_THRESHOLD:
+        return {"label": "angry",   "confidence": round(min(1.0, abs(compound)), 2)}
+    if compound <= VADER_SAD_UPPER:
+        return {"label": "sad",     "confidence": round(min(1.0, abs(compound) * 0.8), 2)}
+    if compound >= VADER_HAPPY_THRESHOLD:
+        return {"label": "happy",   "confidence": round(min(1.0, compound), 2)}
+
+    return {"label": "neutral", "confidence": 0.60}
+_________
+formatter.py:
+"""
+formatter.py — Content-type-aware, emotion-driven answer builder.
+
+v2.3 — Complete unified version.
+
+FIXES ACROSS VERSIONS:
+  • "Give me 1 line about you" → short intent → single sentence response
+  • "What is your services?"   → clean numbered list, no FAQ Q&A content
+  • "Are you free today?"      → booking renderer with availability note
+  • Services renderer: skips FAQ content, shows only service names
+  • About renderer: short mode returns one crisp sentence
+  • General renderer: short mode returns 1 sentence
+  • excited emotion fully supported across all openers/closers
+  • Source line deduplication — unique titles only
+"""
+
+from typing import List, Dict, Any
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# A) Openers and closers — emotion × content type
+# ══════════════════════════════════════════════════════════════════════════
+
+_OPENING: Dict[str, Dict[str, str]] = {
+    "happy": {
+        "pricing":  "Great news — here's the complete pricing breakdown for you! 😊",
+        "services": "Absolutely! Here's everything JinniChirag Makeup Artist offers 😊",
+        "booking":  "Exciting! Let me walk you through how to book 🎉",
+        "contact":  "Of course! Here are all the ways to get in touch 😊",
+        "social":   "Great question! Here are the social media details 😊",
+        "about":    "Happy to share! Here's a bit about JinniChirag Makeup Artist 😊",
+        "tips":     "Love it! Here are some pro tips from Chirag Sharma 😊",
+        "faq":      "Great question! Here are the answers 😊",
+        "events":   "Exciting! Here's all the info about events 😊",
+        "general":  "Great question! Here's what I found for you 😊",
+    },
+    "excited": {
+        "pricing":  "Amazing! 🎉 Here's the complete pricing just for you!",
+        "services": "Woohoo! Here's everything we offer at JinniChirag Makeup Artist 🌟",
+        "booking":  "Let's get you booked! 🎊 Here's how it works:",
+        "contact":  "Sure thing! 🌟 Here's how to reach us:",
+        "social":   "Yay! 🎉 Here are all our social media links:",
+        "about":    "We're thrilled you asked! 🎉 Here's all about JinniChirag:",
+        "tips":     "Love your enthusiasm! ✨ Here are top tips from Chirag Sharma:",
+        "faq":      "Great energy! 🌟 Here are the answers you need:",
+        "events":   "Exciting times! 🎊 Here's all the event info:",
+        "general":  "Love the excitement! 🎉 Here's what I found:",
+    },
+    "neutral": {
+        "pricing":  "Here is the complete pricing information:",
+        "services": "Here is an overview of services offered by JinniChirag Makeup Artist:",
+        "booking":  "Here is how to book a service with JinniChirag Makeup Artist:",
+        "contact":  "Here are the contact details for JinniChirag Makeup Artist:",
+        "social":   "Here are the social media details for JinniChirag Makeup Artist:",
+        "about":    "Here is information about JinniChirag Makeup Artist:",
+        "tips":     "Here are professional makeup tips from JinniChirag Makeup Artist:",
+        "faq":      "Here are the answers to your question:",
+        "events":   "Here is information about JinniChirag events:",
+        "general":  "Here is the information from our knowledge base:",
+    },
+    "sad": {
+        "pricing":  "I understand — here's the pricing information that might help you plan:",
+        "services": "I'm here to help. Here's what JinniChirag Makeup Artist offers:",
+        "booking":  "Don't worry — I'll walk you through the booking process:",
+        "contact":  "Of course — here's how you can reach us directly:",
+        "social":   "Sure — here are the social media details:",
+        "about":    "I'm here to help. Here's everything about us:",
+        "tips":     "Here are some helpful tips from Chirag Sharma:",
+        "faq":      "I understand. Let me answer your question clearly:",
+        "events":   "Here is the events information:",
+        "general":  "I understand, and I'm here to help. Here's what I found:",
+    },
+    "angry": {
+        "pricing":  "I sincerely apologise for any confusion. Here is the correct pricing:",
+        "services": "I apologise for any inconvenience. Here are the exact services provided:",
+        "booking":  "I'm sorry for the trouble. Here is the exact booking process:",
+        "contact":  "I apologise. Here are the direct contact details:",
+        "social":   "I apologise. Here are the social media details:",
+        "about":    "I'm sorry for any confusion. Here is the correct information:",
+        "tips":     "I'm sorry. Here are the makeup tips:",
+        "faq":      "I sincerely apologise. Here is the clear answer:",
+        "events":   "I apologise. Here is the events information:",
+        "general":  "I sincerely apologise. Here is the correct information:",
+    },
+    "confused": {
+        "pricing":  "No worries — let me break down the pricing clearly for you:",
+        "services": "No problem at all — here's a clear list of what we offer:",
+        "booking":  "No worries! Here's the booking process explained simply:",
+        "contact":  "Sure! Here's exactly how you can contact us:",
+        "social":   "No problem! Here are the social media details clearly:",
+        "about":    "No worries — here's a clear overview of who we are:",
+        "tips":     "No worries! Here are easy-to-follow makeup tips:",
+        "faq":      "Good question! Let me break down the answer clearly:",
+        "events":   "No worries! Here's how events work:",
+        "general":  "No worries — let me explain this clearly:",
+    },
+}
+
+_CLOSING: Dict[str, str] = {
+    "happy":   "Hope that helps! Feel free to ask anything else 😊",
+    "excited": "Hope you're as excited as we are! Ask me anything else 🌟",
+    "neutral": "If you need further clarification, feel free to ask.",
+    "sad":     "I'm here whenever you need more help — you've got this! 💙",
+    "angry":   "I hope this resolves your concern. Please let me know if I can help further.",
+    "confused":"Does that make sense? Ask me anything and I'm happy to clarify!",
+}
+
+
+def _get_opening(emotion: str, content_type: str) -> str:
+    em = emotion if emotion in _OPENING else "neutral"
+    ct = content_type if content_type in _OPENING[em] else "general"
+    return _OPENING[em][ct]
+
+
+def _get_closing(emotion: str) -> str:
+    return _CLOSING.get(emotion, _CLOSING["neutral"])
+
+
+def _source_line(titles: List[str]) -> str:
+    unique = list(dict.fromkeys(t for t in titles if t))
+    if not unique:
+        return ""
+    return "Sources:  " + "  ".join(f"📄 {t}" for t in unique)
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# B) Greeting / small-talk replies (no KB)
+# ══════════════════════════════════════════════════════════════════════════
+
+_GREETING = {
+    "happy":   "Hey there! 😊 So glad you stopped by! I'm JinniChirag's assistant — ask me anything about makeup services, pricing, bookings, or Chirag Sharma!",
+    "excited": "Hey!! 🎉 Welcome to JinniChirag Makeup Artist! I'm so excited to help you today — ask me about services, pricing, or how to book!",
+    "neutral": (
+        "Hello! 👋 Welcome to JinniChirag Makeup Artist. I can help you with:\n"
+        "  • Services and pricing\n"
+        "  • Booking an appointment\n"
+        "  • Contact and social media\n"
+        "  • Makeup tips\n"
+        "What would you like to know?"
+    ),
+    "sad":     "Hello! I'm here for you. 💙 Feel free to ask anything — I'll do my best to help.",
+    "angry":   "Hi there. I'm sorry if something has frustrated you — I'm here and ready to help right away.",
+    "confused":"Hello! Don't worry at all — I'm here to explain anything about JinniChirag's services. What would you like to know?",
+}
+
+_SMALL_TALK = {
+    "happy":   "I'm doing great, thanks! 😄 I can help with services, pricing, bookings, and more about JinniChirag Makeup Artist. What's on your mind?",
+    "excited": "I'm full of energy and ready to help! 🌟 Ask me about services, pricing, or how to book an appointment!",
+    "neutral": (
+        "I'm doing well, thank you! I'm JinniChirag's AI assistant. I can help with:\n"
+        "  • Services and pricing\n"
+        "  • Booking an appointment\n"
+        "  • Contact information\n"
+        "  • Makeup tips and FAQs\n"
+        "What would you like to know?"
+    ),
+    "sad":     "I'm always here to help! 💙 Just ask me anything about JinniChirag Makeup Artist.",
+    "angry":   "I'm here and ready to help. What do you need?",
+    "confused":"I'm JinniChirag's AI assistant! I can help with services, pricing, bookings, and more. What would you like to know?",
+}
+
+
+def build_conversational_reply(intent_mode: str, emotion: str) -> str:
+    em = emotion if emotion in _GREETING else "neutral"
+    return _GREETING[em] if intent_mode == "greeting" else _SMALL_TALK[em]
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# C) Fallback (no KB match)
+# ══════════════════════════════════════════════════════════════════════════
+
+def build_fallback_answer(emotion: str, related_titles: List[str]) -> str:
+    em = emotion if emotion in _CLOSING else "neutral"
+    lines = [
+        _get_opening(em, "general"),
+        "",
+        "I could not find this specific information in our knowledge base.",
+        "You may contact us directly for assistance:",
+        "  📞 Phone / WhatsApp: +977 970-7613340",
+        "  📧 Email: jinnie.chirag.mua101@gmail.com",
+    ]
+    if related_titles:
+        lines += ["", "You might also find these topics helpful:"]
+        for t in related_titles[:2]:
+            lines.append(f"  • {t}")
+    lines += ["", _get_closing(em)]
+    return "\n".join(lines)
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# D) Specialist content renderers
+# ══════════════════════════════════════════════════════════════════════════
+
+def _render_pricing(structured: dict) -> str:
+    categories = structured.get("categories", [])
+    notes      = structured.get("notes", [])
+    lines = []
+    for cat in categories:
+        name  = cat.get("name", "")
+        items = cat.get("items", [])
+        if not items:
+            continue
+        if name:
+            lines.append(f"\n{name}:")
+        for item in items:
+            lines.append(f"  • {item.strip().lstrip('-•* ')}")
+    if notes:
+        lines.append("\nImportant Notes:")
+        for note in notes:
+            lines.append(f"  • {note.strip().lstrip('-•* ')}")
+    return "\n".join(lines).strip()
+
+
+def _render_services(structured: dict, intent_mode: str = "default") -> str:
+    services = structured.get("services", [])
+    default_services = [
+        "Bridal Makeup (Signature & Luxury packages)",
+        "Party Makeup",
+        "Engagement Makeup",
+        "Pre-Wedding Shoot Makeup",
+        "Reception Makeup",
+        "Henna / Mehendi Services",
+    ]
+    display = services if services else default_services
+
+    # Short / one-line mode
+    if intent_mode == "short":
+        return ("JinniChirag Makeup Artist offers: "
+                + ", ".join(display[:4]) + ", and more. 💄")
+
+    lines = []
+    for i, svc in enumerate(display, 1):
+        lines.append(f"  {i}. {svc.strip().lstrip('-•* ')}")
+    lines.append("\n💬 Ask me about pricing or how to book any of these!")
+    return "\n".join(lines)
+
+
+def _render_booking(structured: dict) -> str:
+    steps    = structured.get("steps", [])
+    required = structured.get("required", [])
+    lines    = ["📅 To check availability and book your slot:\n"]
+
+    if steps:
+        lines.append("How to Book:")
+        for i, step in enumerate(steps[:6], 1):
+            lines.append(f"  {i}. {step.strip().lstrip('-•* ')}")
+    else:
+        lines += [
+            "  1. Say \"I want to book\" in this chat — the assistant guides you step by step.",
+            "  2. Or fill out the booking form on the website.",
+            "  3. You'll receive an OTP on WhatsApp to confirm your booking.",
+            "  4. The admin contacts you within 24 hours to confirm availability.",
+        ]
+
+    if required:
+        lines += ["", "Information Required:"]
+        for item in required[:6]:
+            lines.append(f"  • {item.strip().lstrip('-•* ')}")
+
+    return "\n".join(lines)
+
+
+def _render_contact(structured: dict) -> str:
+    info   = structured.get("contact", {})
+    labels = {
+        "phone":     "📞 Phone / WhatsApp",
+        "whatsapp":  "💬 WhatsApp",
+        "email":     "📧 Email",
+        "instagram": "📸 Instagram",
+        "youtube":   "▶️  YouTube",
+        "facebook":  "📘 Facebook",
+        "tiktok":    "🎵 TikTok",
+    }
+    lines = [f"  {label}: {info[key]}"
+             for key, label in labels.items() if info.get(key)]
+    if not lines:
+        lines = [
+            "  📞 Phone / WhatsApp: +977 970-7613340",
+            "  📧 Email: jinnie.chirag.mua101@gmail.com",
+            "  📸 Instagram: https://www.instagram.com/_jinniechiragmua/",
+            "  ▶️  YouTube: https://www.youtube.com/@jinniechiragmua",
+            "  📘 Facebook: https://www.facebook.com/chirag.sharma.5477272/",
+            "  🎵 TikTok: https://www.tiktok.com/@_chirag_101",
+        ]
+    return "\n".join(lines)
+
+
+def _render_social(structured: dict) -> str:
+    info  = structured.get("social", {})
+    lines = []
+    if "total_followers" in info:
+        lines += [f"  🌟 Total combined following: {info['total_followers']}", ""]
+    platform_labels = {
+        "instagram": "📸 Instagram",
+        "youtube":   "▶️  YouTube",
+        "facebook":  "📘 Facebook",
+        "tiktok":    "🎵 TikTok",
+    }
+    for key, label in platform_labels.items():
+        val = info.get(key)
+        if isinstance(val, dict):
+            url = val.get("url", "")
+            cnt = val.get("followers", "")
+            if url:
+                lines.append(f"  {label}: {url}" + (f"  ({cnt})" if cnt else ""))
+        elif isinstance(val, str):
+            lines.append(f"  {label}: {val}")
+    if not lines:
+        lines = [
+            "  🌟 Combined following: over 1.4 million across all platforms",
+            "  📸 Instagram: https://www.instagram.com/_jinniechiragmua/",
+            "  ▶️  YouTube: https://www.youtube.com/@jinniechiragmua",
+            "  📘 Facebook: https://www.facebook.com/chirag.sharma.5477272/",
+            "  🎵 TikTok: https://www.tiktok.com/@_chirag_101",
+        ]
+    return "\n".join(lines)
+
+
+def _render_about(structured: dict, intent_mode: str = "default") -> str:
+    facts   = structured.get("facts", [])
+    contact = structured.get("contact", {})
+    social  = structured.get("social", {})
+
+    default_facts = [
+        "JinniChirag Makeup Artist is a premium makeup brand founded by Chirag Sharma.",
+        "Chirag Sharma is a celebrity makeup artist and bridal specialist with over 9 years of experience.",
+        "The brand has a combined social media following of over 1.4 million followers.",
+        "Chirag specializes in bridal, party, engagement makeup, and henna services.",
+        "The brand serves clients across India, Nepal, Pakistan, Bangladesh, and Dubai/UAE.",
+    ]
+    display_facts = facts if facts else default_facts
+
+    # ── Short / 1-line mode ────────────────────────────────────────────────
+    if intent_mode == "short":
+        return (display_facts[0] if display_facts else
+                "JinniChirag Makeup Artist is a premium bridal & party makeup brand by celebrity "
+                "artist Chirag Sharma, with 9+ years of experience and 1.4M+ social media followers. 💄")
+
+    lines = ["About JinniChirag Makeup Artist:"]
+    for f in display_facts[:6]:
+        lines.append(f"  • {f.strip().lstrip('-•* ')}")
+
+    if contact:
+        lines += ["", "Contact:"]
+        if contact.get("phone"): lines.append(f"  📞 {contact['phone']}")
+        if contact.get("email"): lines.append(f"  📧 {contact['email']}")
+
+    if social:
+        lines += ["", "Social Media:"]
+        plat = {"instagram": "📸", "youtube": "▶️ ", "facebook": "📘", "tiktok": "🎵"}
+        for k, icon in plat.items():
+            if social.get(k):
+                lines.append(f"  {icon} {social[k]}")
+
+    return "\n".join(lines)
+
+
+def _render_tips(structured: dict) -> str:
+    sections = structured.get("sections", [])
+    lines    = []
+    for sec in sections:
+        name = sec.get("name", "")
+        tips = sec.get("tips", [])
+        if name:
+            lines.append(f"\n{name}:")
+        for tip in tips:
+            lines.append(f"  • {tip.strip().lstrip('-•* ')}")
+    return "\n".join(lines).strip()
+
+
+def _render_faq(structured: dict) -> str:
+    pairs = structured.get("qa_pairs", [])
+    lines = []
+    for pair in pairs:
+        lines += [f"  ❓ {pair['q']}", f"     {pair['a']}", ""]
+    return "\n".join(lines).strip()
+
+
+def _render_general(structured: dict, sentences: List[str],
+                     intent_mode: str, all_text: str) -> str:
+    if not sentences:
+        return all_text[:500] if all_text else ""
+
+    # 1 line / short mode → single sentence
+    if intent_mode == "short":
+        return sentences[0]
+
+    if intent_mode == "steps":
+        return "\n".join(f"  {i}. {s}" for i, s in enumerate(sentences[:7], 1))
+
+    if len(sentences) == 1:
+        return sentences[0]
+
+    # Default: 2-sentence intro + bullet overflow for extras
+    intro = " ".join(sentences[:2])
+    remaining = sentences[2:5]
+    if remaining:
+        return intro + "\n\n" + "\n".join(f"  • {s}" for s in remaining)
+    return intro
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# E) Main public builder
+# ══════════════════════════════════════════════════════════════════════════
+
+def build_answer(summary: Dict[str, Any], emotion: str, intent_mode: str) -> str:
+    em           = emotion if emotion in _OPENING else "neutral"
+    content_type = summary.get("content_type", "general")
+    structured   = summary.get("structured", {})
+    sentences    = summary.get("sentences", [])
+    all_text     = summary.get("all_text", "")
+    titles       = summary.get("chunk_titles", [])
+
+    # Pass intent_mode to renderers that support short mode
+    renderers = {
+        "pricing":  lambda: _render_pricing(structured),
+        "services": lambda: _render_services(structured, intent_mode),
+        "booking":  lambda: _render_booking(structured),
+        "contact":  lambda: _render_contact(structured),
+        "social":   lambda: _render_social(structured),
+        "about":    lambda: _render_about(structured, intent_mode),
+        "tips":     lambda: _render_tips(structured),
+        "faq":      lambda: _render_faq(structured),
+    }
+
+    body = ""
+    if content_type in renderers:
+        body = renderers[content_type]()
+
+    # Fallback to general if specialist produced nothing useful
+    if not body or len(body.strip()) < 20:
+        body = _render_general(structured, sentences, intent_mode, all_text)
+
+    if not body or len(body.strip()) < 10:
+        body = ("I found some information but could not structure it clearly. "
+                "Please contact us at +977 970-7613340 for direct assistance.")
+
+    parts = [_get_opening(em, content_type), "", body, "", _get_closing(em)]
+    src   = _source_line(titles)
+    if src:
+        parts.append(src)
+
+    return "\n".join(parts)
+_________
+memory.py:
+
+"""
+memory.py — Per-session conversation memory stored in MongoDB.
+
+v2.3 — Complete unified version.
+
+Keeps:
+  • last 10 user messages   (raised from 5 for better follow-up context)
+  • last 5 assistant answers (raised from 3)
+
+TTL managed by MongoDB TTL index on `expires_at` (created in db.py).
+Each save() call refreshes the expiry window (default 60 min).
+"""
+
+from datetime import datetime, timedelta, timezone
+from agent.config import (
+    MAX_USER_MESSAGES,
+    MAX_ASSISTANT_ANSWERS,
+    SESSION_TTL_MINUTES,
+)
+from agent.db import col_sessions
+
+
+# ── Internal helpers ───────────────────────────────────────────────────────
+def _now_utc() -> datetime:
+    return datetime.now(timezone.utc)
+
+
+def _new_expiry() -> datetime:
+    return _now_utc() + timedelta(minutes=SESSION_TTL_MINUTES)
+
+
+# ── Public API ─────────────────────────────────────────────────────────────
+def load_memory(session_id: str) -> dict:
+    """
+    Return the session document for *session_id*, or a blank template.
+    Schema: {session_id, user_messages, assistant_messages}
+    """
+    doc = col_sessions().find_one({"session_id": session_id})
+    if doc is None:
+        return {
+            "session_id":         session_id,
+            "user_messages":      [],
+            "assistant_messages": [],
+        }
+    return {
+        "session_id":         session_id,
+        "user_messages":      doc.get("user_messages", []),
+        "assistant_messages": doc.get("assistant_messages", []),
+    }
+
+
+def save_memory(session_id: str, user_message: str, assistant_message: str) -> None:
+    """
+    Append new messages and refresh TTL expiry.
+    Trims to MAX_USER_MESSAGES / MAX_ASSISTANT_ANSWERS.
+    """
+    memory    = load_memory(session_id)
+    user_msgs = (memory["user_messages"] + [user_message])[-MAX_USER_MESSAGES:]
+    asst_msgs = (memory["assistant_messages"] + [assistant_message])[-MAX_ASSISTANT_ANSWERS:]
+
+    col_sessions().update_one(
+        {"session_id": session_id},
+        {
+            "$set": {
+                "session_id":         session_id,
+                "user_messages":      user_msgs,
+                "assistant_messages": asst_msgs,
+                "updated_at":         _now_utc(),
+                "expires_at":         _new_expiry(),
+            }
+        },
+        upsert=True,
+    )
+
+
+def expand_query_with_memory(message: str, memory: dict) -> str:
+    """
+    If the current message is a short follow-up, prepend the last user
+    message to give the retriever more context.
+
+    Example:
+      Previous: "Tell me about bridal makeup"
+      Current:  "What about the price?"
+      Expanded: "Tell me about bridal makeup What about the price?"
+    """
+    from agent.utils import is_followup_query
+    user_history = memory.get("user_messages", [])
+    if is_followup_query(message) and user_history:
+        previous = user_history[-1]
+        return f"{previous} {message}"
+    return message
+_____
+retriever.py:
+
+"""
+retriever.py — Semantic retrieval using cosine similarity.
+
+Strategy (memory-safe for Render free plan):
+  • Scan `kb_embeddings` using a cursor (never load all into RAM at once).
+  • Compute dot product (= cosine sim since vectors are unit-normalised).
+  • Maintain a running top_k heap — at any point only top_k scores in RAM.
+  • Stop after MAX_CHUNKS_TO_SEARCH embeddings to cap CPU/RAM usage.
+  • Enrich results with chunk_text and title from `kb_chunks`.
+"""
+
+import heapq
+from typing import List
+
+import numpy as np
+
+from agent.config import TOP_K, SIM_THRESHOLD, MAX_CHUNKS_TO_SEARCH
+from agent.db import col_embeddings, col_chunks
+
+
+def retrieve_top_chunks(query_vec: np.ndarray, top_k: int = TOP_K) -> List[dict]:
+    """
+    Find the *top_k* most similar chunks to *query_vec*.
+
+    Returns a list of dicts (sorted by similarity descending):
+        [
+            {
+                "chunk_id":   str,
+                "doc_id":     str,    # from kb_chunks
+                "title":      str,    # from kb_chunks
+                "chunk_text": str,
+                "score":      float,
+            },
+            ...
+        ]
+
+    Only returns entries with score >= SIM_THRESHOLD.
+    Returns an empty list when nothing relevant is found.
+    """
+
+    # Min-heap of (score, chunk_id) — we keep only top_k items
+    heap: list = []   # tuples: (score, chunk_id)
+
+    seen = 0
+    cursor = col_embeddings().find(
+        {},
+        {"chunk_id": 1, "embedding": 1, "_id": 0}
+    )
+
+    for doc in cursor:
+        if seen >= MAX_CHUNKS_TO_SEARCH:
+            break
+        seen += 1
+
+        # Deserialise stored vector
+        stored_vec = np.array(doc["embedding"], dtype=np.float32)
+
+        # Dot product of two unit vectors = cosine similarity
+        score = float(np.dot(query_vec, stored_vec))
+
+        chunk_id = doc["chunk_id"]
+
+        if len(heap) < top_k:
+            heapq.heappush(heap, (score, chunk_id))
+        elif score > heap[0][0]:
+            heapq.heapreplace(heap, (score, chunk_id))
+
+    # Sort best-first
+    top_results = sorted(heap, key=lambda x: x[0], reverse=True)
+
+    # Enrich with text and metadata from kb_chunks
+    enriched: List[dict] = []
+    for score, chunk_id in top_results:
+        if score < SIM_THRESHOLD:
+            continue   # below threshold → do not include
+
+        chunk = col_chunks().find_one(
+            {"_id": _to_object_id(chunk_id)},
+            {"doc_id": 1, "title": 1, "chunk_text": 1}
+        )
+        if chunk is None:
+            continue
+
+        enriched.append({
+            "chunk_id":   chunk_id,
+            "doc_id":     str(chunk.get("doc_id", "")),
+            "title":      chunk.get("title", ""),
+            "chunk_text": chunk.get("chunk_text", ""),
+            "score":      round(score, 4),
+        })
+
+    return enriched
+
+
+def _to_object_id(id_str: str):
+    """Safely convert a string to ObjectId if possible."""
+    from bson import ObjectId
+    try:
+        return ObjectId(id_str)
+    except Exception:
+        return id_str   # fallback (e.g. already an ObjectId or custom string)
+______
+schemas.py:
+"""
+schemas.py — Pydantic request/response models for the /chat endpoint.
+
+Response format requested by user:
+    {
+        "answer_text":        string,
+        "intent_mode":        string,
+        "emotion_label":      string,
+        "emotion_confidence": float,
+        "used_sources":       int,
+        "top_chunks":         [ { chunk metadata } ]
+    }
+"""
+
+from typing import List, Literal
+from pydantic import BaseModel, Field
+
+
+# ── Request ────────────────────────────────────────────────────────────────
+
+class ChatRequest(BaseModel):
+    session_id: str = Field(..., example="abc123")
+    message:    str = Field(..., example="What services do you offer?")
+
+
+# ── Chunk metadata (inside top_chunks list) ────────────────────────────────
+
+class ChunkMeta(BaseModel):
+    chunk_id:   str
+    doc_id:     str
+    title:      str
+    similarity: float
+    preview:    str   # first ~120 chars of the chunk text
+
+
+# ── Main response ──────────────────────────────────────────────────────────
+
+class ChatResponse(BaseModel):
+    session_id:         str
+    answer_text:        str
+    intent_mode:        str     # greeting | small_talk | short | steps | detailed | default
+    emotion_label:      str     # angry | sad | confused | happy | neutral
+    emotion_confidence: float
+    used_sources:       int     # 0 for greetings, N for KB answers
+    top_chunks:         List[ChunkMeta]
+________
+summarizer.py:
+"""
+summarizer.py — Content-type-aware extractive summarisation.
+
+v3.0 — Accepts optional NLU content_hint to improve content-type detection.
+
+UPGRADE:
+  extractive_summarise() now accepts an optional content_hint parameter.
+  When the NLU classifier predicts a KB content type with high confidence
+  (e.g. "pricing", "services"), that hint is used to override or confirm
+  the heuristic detect_content_type() logic. This reduces misclassification.
+"""
+
+import re
+from typing import List, Dict, Any, Optional
+
+from agent.config import MAX_CONTEXT_CHARS, MAX_SUMMARY_SENTENCES
+from agent.utils import extract_keywords, safe_truncate
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# A) Content-type detection
+# ══════════════════════════════════════════════════════════════════════════
+
+def detect_content_type(
+    chunks: List[dict],
+    query: str,
+    hint: Optional[str] = None,
+) -> str:
+    """
+    Determine content type from query + chunks.
+    If hint is provided (from NLU classifier), it takes priority
+    when the heuristic result agrees or is 'general'.
+    """
+    combined = " ".join(c.get("chunk_text", "") for c in chunks).lower()
+    q = query.lower()
+
+    def asks(*words): return any(w in q for w in words)
+    def has(*words):  return any(w in combined for w in words)
+
+    # Heuristic detection
+    heuristic = _heuristic_content_type(q, combined, asks, has)
+
+    # Apply hint: if NLU gave a specific KB label and heuristic is vague
+    valid_hints = {
+        "services", "pricing", "booking", "contact",
+        "about", "social", "tips", "events", "faq",
+    }
+    if hint and hint in valid_hints:
+        if heuristic == "general" or heuristic == hint:
+            return hint
+
+    return heuristic
+
+
+def _heuristic_content_type(q, combined, asks, has) -> str:
+    """Pure heuristic content-type detection (unchanged from v2.3)."""
+
+    # Social
+    if asks("follower", "followers", "following", "how many people", "how many follow",
+            "social media count", "subscriber", "reach", "fan", "fans", "audience"):
+        return "social"
+    if has("1.4 million", "combined following", "million followers") and \
+       asks("follow", "social", "instagram", "youtube"):
+        return "social"
+
+    # Pricing
+    if asks("price", "cost", "charge", "fee", "how much", "rate", "pricing",
+            "package", "₹", "inr") and \
+       has("₹", "inr", "rs.", "price", "cost", "charge"):
+        return "pricing"
+
+    # Booking
+    if asks("book", "appointment", "schedule", "reserve", "how to book",
+            "slot", "availability", "otp", "confirmation",
+            "are you free", "are you available", "free today", "available today",
+            "when can i", "can i book", "free slot", "open slot"):
+        return "booking"
+
+    # Contact
+    if asks("contact", "phone", "email", "reach", "call", "whatsapp",
+            "message", "talk", "number", "address"):
+        return "contact"
+
+    # Services — BEFORE faq
+    if asks("service", "services", "offer", "provide", "do you do",
+            "what can", "available", "list", "what do you",
+            "tell me about your", "what services",
+            "what can you do", "what do you have", "capabilities",
+            "what do you offer", "what can you help",
+            "services offered", "services available"):
+        return "services"
+
+    # About
+    if asks("about", "who are you", "tell me about yourself", "background",
+            "experience", "profile", "introduce", "biography", "history",
+            "what can you tell", "complete details", "yourself", "chirag",
+            "about you", "1 line about", "one line about", "brief about",
+            "tell me about jinni", "tell me about chirag"):
+        return "about"
+
+    # Tips
+    if asks("tip", "tips", "advice", "how to apply", "skin", "skincare",
+            "prepare", "preparation", "makeup advice"):
+        return "tips"
+
+    # Events
+    if asks("event", "events", "workshop", "class", "seminar", "attend"):
+        return "events"
+
+    # FAQ — only when explicitly requested
+    if asks("faq", "frequently", "common question") and \
+       has("q:", "a:", "frequently asked"):
+        return "faq"
+
+    # Content-based fallback
+    if has("₹"):                                          return "pricing"
+    if has("1.4 million", "million followers"):            return "social"
+    if has("instagram", "youtube", "tiktok") and \
+       has("+977", "email", "jinnie.chirag"):              return "contact"
+    if has("bridal", "party makeup", "henna"):             return "services"
+    if has("otp", "booking confirmed", "advance"):         return "booking"
+
+    return "general"
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# B) Structured extractors (unchanged from v2.3)
+# ══════════════════════════════════════════════════════════════════════════
+
+def _extract_pricing(text: str) -> Dict[str, Any]:
+    lines = [l.strip() for l in text.splitlines() if l.strip()]
+    categories, current_cat, current_items = [], None, []
+    for line in lines:
+        has_price = bool(re.search(r'₹[\d,]+', line))
+        is_header = (
+            line.endswith(":") or
+            re.match(r'^(bridal|party|henna|mehendi|engagement|pre.wedding|'
+                     r'reception|luxury|signature|makeup services)', line, re.I)
+        ) and not has_price
+        is_item = bool(re.match(r'^[-•*]\s|^\d+[.)]\s', line)) or has_price
+        if is_header:
+            if current_cat and current_items:
+                categories.append({"name": current_cat, "items": current_items})
+            current_cat, current_items = line.rstrip(":"), []
+        elif is_item and current_cat:
+            clean = re.sub(r'^[-•*\d.)]+\s*', '', line).strip()
+            if clean: current_items.append(clean)
+    if current_cat and current_items:
+        categories.append({"name": current_cat, "items": current_items})
+    if not categories:
+        price_lines = [l.strip() for l in text.splitlines() if re.search(r'₹[\d,]+', l)]
+        if price_lines:
+            categories.append({"name": "Price List", "items": price_lines})
+    notes = [l.strip().lstrip("-• ") for l in text.splitlines()
+             if l.strip() and any(k in l.lower() for k in
+                                   ["exclud", "vari", "final", "advance", "confirm"])]
+    return {"categories": categories, "notes": notes[:4]}
+
+
+def _extract_services(text: str) -> Dict[str, Any]:
+    lines = [l.strip() for l in text.splitlines() if l.strip()]
+    services, seen = [], set()
+    svc_keywords   = r'bridal|party|henna|mehendi|engagement|pre.wedding|reception|signature|luxury'
+    skip_patterns  = re.compile(
+        r'^(q:|a:|yes,|no,|there are|the booking|clients|for immediate|'
+        r'available by|service is|services are|all services)',
+        re.IGNORECASE
+    )
+    for line in lines:
+        if skip_patterns.match(line) or len(line) > 100:
+            continue
+        if re.search(svc_keywords, line, re.I) and len(line) > 8:
+            clean = re.sub(r'^[-•*\d.)]+\s*', '', line).strip().rstrip(":")
+            clean = re.sub(r'\s*[\(₹].*$', '', clean).strip()
+            key   = clean.lower()[:40]
+            if clean and key not in seen and len(clean) > 5:
+                services.append(clean)
+                seen.add(key)
+    for line in lines:
+        if re.match(r'^\d+\.\s', line) and not skip_patterns.match(line):
+            clean = re.sub(r'^\d+\.\s*', '', line).strip()
+            clean = re.sub(r'\s*[\(₹].*$', '', clean).strip()
+            key   = clean.lower()[:40]
+            if key not in seen and 5 < len(clean) < 80:
+                services.insert(0, clean)
+                seen.add(key)
+    return {"services": list(dict.fromkeys(services))[:10]}
+
+
+def _extract_booking(text: str) -> Dict[str, Any]:
+    lines = [l.strip() for l in text.splitlines() if l.strip()]
+    steps, required, seen_steps = [], [], set()
+    in_required = False
+    for line in lines:
+        lower = line.lower()
+        if any(w in lower for w in ["required information", "information required",
+                                     "information you'll need", "details needed"]):
+            in_required = True
+            continue
+        if re.match(r'^[-•*]\s|^\d+[.)]\s', line):
+            clean = re.sub(r'^[-•*\d.)]+\s*', '', line).strip()
+            key   = clean.lower()[:60]
+            if in_required:
+                if key not in seen_steps: required.append(clean); seen_steps.add(key)
+            else:
+                if key not in seen_steps and len(clean) > 10:
+                    steps.append(clean); seen_steps.add(key)
+        elif any(w in lower for w in ["method 1", "method 2", "step",
+                                       "first", "next", "then", "finally", "after"]):
+            key = lower[:60]
+            if key not in seen_steps: steps.append(line); seen_steps.add(key)
+    return {"steps": [s for s in steps if len(s) > 15][:7], "required": required[:7]}
+
+
+def _extract_contact(text: str) -> Dict[str, Any]:
+    info  = {}
+    for line in text.splitlines():
+        line  = line.strip(); lower = line.lower()
+        if not line: continue
+        if re.search(r'\+\d[\d\s\-]{8,}', line):
+            m = re.search(r'\+[\d\s\-]+', line)
+            if m: info.setdefault("phone", m.group().strip())
+        if re.search(r'[\w.\-]+@[\w.\-]+\.\w+', line):
+            m = re.search(r'[\w.\-]+@[\w.\-]+\.\w+', line)
+            if m: info.setdefault("email", m.group())
+        for platform in ["instagram", "youtube", "facebook", "tiktok"]:
+            if platform in lower:
+                m = re.search(r'https?://\S+', line)
+                if m: info.setdefault(platform, m.group().rstrip(".,)"))
+        if "whatsapp" in lower and "whatsapp" not in info:
+            m = re.search(r'\+[\d\s\-]+', line)
+            if m: info["whatsapp"] = m.group().strip()
+    return {"contact": info}
+
+
+def _extract_social(text: str) -> Dict[str, Any]:
+    info = {}
+    m = re.search(r'([\d.]+\s*million\+?|over\s+[\d.]+\s*million|[\d,]+\+?\s*followers)',
+                  text, re.I)
+    if m: info["total_followers"] = m.group().strip()
+    for line in text.splitlines():
+        lower = line.lower()
+        for platform in ["instagram", "youtube", "facebook", "tiktok"]:
+            if platform in lower:
+                url_m   = re.search(r'https?://\S+', line)
+                count_m = re.search(r'[\d.,]+\s*(k|m|million|thousand|lakh|followers)?', line, re.I)
+                entry   = {}
+                if url_m: entry["url"] = url_m.group().rstrip(".,)")
+                if count_m and any(u in line.lower() for u in ["k", "m", "million", "lakh", "followers"]):
+                    entry["followers"] = count_m.group().strip()
+                if entry: info.setdefault(platform, entry)
+    return {"social": info}
+
+
+def _extract_about(text: str) -> Dict[str, Any]:
+    lines = [l.strip() for l in text.splitlines() if l.strip()]
+    facts, contact, social = [], {}, {}
+    for line in lines:
+        lower = line.lower()
+        if len(line) < 5: continue
+        if re.search(r'\+\d[\d\s\-]{8,}', line):
+            m = re.search(r'\+[\d\s\-]+', line)
+            if m: contact.setdefault("phone", m.group().strip())
+        if re.search(r'[\w.\-]+@[\w.\-]+\.\w+', line):
+            m = re.search(r'[\w.\-]+@[\w.\-]+\.\w+', line)
+            if m: contact.setdefault("email", m.group())
+        for platform in ["instagram", "youtube", "facebook", "tiktok"]:
+            if platform in lower:
+                url_m = re.search(r'https?://\S+', line)
+                if url_m: social[platform] = url_m.group().rstrip(".,)")
+        if (re.match(r'^[-•*]\s|^\d+[.)]\s', line) or
+                any(k in lower for k in ["year", "experience", "speciali", "known for",
+                                          "follower", "million", "brand", "founded",
+                                          "premium", "luxury", "celebrity", "artist"])):
+            clean = re.sub(r'^[-•*\d.)]+\s*', '', line).strip()
+            if len(clean) > 15: facts.append(clean)
+    return {"facts": list(dict.fromkeys(facts))[:10], "contact": contact, "social": social}
+
+
+def _extract_tips(text: str) -> Dict[str, Any]:
+    lines = [l.strip() for l in text.splitlines() if l.strip()]
+    sections, current_sec, current_tips = [], None, []
+    for line in lines:
+        if line.endswith(":") and len(line) < 50:
+            if current_sec and current_tips:
+                sections.append({"name": current_sec, "tips": current_tips})
+            current_sec, current_tips = line.rstrip(":"), []
+        elif re.match(r'^[-•*]\s|^\d+[.)]\s', line):
+            clean = re.sub(r'^[-•*\d.)]+\s*', '', line).strip()
+            if clean: current_tips.append(clean)
+        elif current_sec and line:
+            current_tips.append(line)
+    if current_sec and current_tips:
+        sections.append({"name": current_sec, "tips": current_tips})
+    if not sections:
+        tips = [re.sub(r'^[-•*\d.)]+\s*', '', l).strip()
+                for l in lines if re.match(r'^[-•*]\s|^\d+[.)]\s', l)]
+        if tips: sections.append({"name": "Makeup Tips", "tips": tips})
+    return {"sections": sections}
+
+
+def _extract_faq(text: str, query: str) -> Dict[str, Any]:
+    pairs, current_q, current_a = [], None, []
+    for line in text.splitlines():
+        line = line.strip()
+        if not line: continue
+        if re.match(r'^Q:\s', line, re.I):
+            if current_q and current_a:
+                pairs.append({"q": current_q, "a": " ".join(current_a)})
+            current_q = re.sub(r'^Q:\s*', '', line, flags=re.I); current_a = []
+        elif re.match(r'^A:\s', line, re.I):
+            current_a = [re.sub(r'^A:\s*', '', line, flags=re.I)]
+        elif current_a is not None and not re.match(r'^Q:\s', line, re.I):
+            current_a.append(line)
+    if current_q and current_a:
+        pairs.append({"q": current_q, "a": " ".join(current_a)})
+    keywords = extract_keywords(query)
+    if keywords:
+        def sc(p): return sum(1 for k in keywords if k in (p["q"] + p["a"]).lower())
+        pairs.sort(key=sc, reverse=True)
+    return {"qa_pairs": pairs[:4]}
+
+
+def _extract_general(text: str, query: str) -> Dict[str, Any]:
+    parts     = re.split(r'(?<=[.!?])\s+', text)
+    sentences = [p.strip() for p in parts if len(p.strip()) >= 20]
+    keywords  = extract_keywords(query)
+    def sc(s): return sum(1 for k in keywords if k in s.lower())
+    scored = sorted(sentences, key=sc, reverse=True)
+    seen, result = set(), []
+    for s in scored:
+        key = s.lower()[:50]
+        if key not in seen: seen.add(key); result.append(s)
+    return {"sentences": result[:MAX_SUMMARY_SENTENCES]}
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# C) Main public function  — now accepts content_hint
+# ══════════════════════════════════════════════════════════════════════════
+
+def extractive_summarise(
+    query:        str,
+    chunks:       List[dict],
+    content_hint: Optional[str] = None,
+) -> Dict[str, Any]:
+    """
+    Detect content type and extract structured data from retrieved chunks.
+
+    Args:
+        query:        Original user message (used for content-type heuristics).
+        chunks:       Retrieved KB chunks.
+        content_hint: Optional NLU-predicted content-type label to use as override.
+
+    Returns a rich dict consumed by formatter.build_answer().
+    """
+    if not chunks:
+        return {"content_type": "general", "structured": {},
+                "all_text": "", "chunk_titles": [], "sentences": []}
+
+    chunk_titles = list(dict.fromkeys(c.get("title", "") for c in chunks))
+    all_text     = "\n\n".join(
+        c.get("chunk_text", "").strip() for c in chunks if c.get("chunk_text")
+    )
+    all_text = safe_truncate(all_text, MAX_CONTEXT_CHARS)
+
+    content_type = detect_content_type(chunks, query, hint=content_hint)
+
+    dispatch = {
+        "pricing":  lambda: _extract_pricing(all_text),
+        "services": lambda: _extract_services(all_text),
+        "booking":  lambda: _extract_booking(all_text),
+        "contact":  lambda: _extract_contact(all_text),
+        "social":   lambda: _extract_social(all_text),
+        "about":    lambda: _extract_about(all_text),
+        "tips":     lambda: _extract_tips(all_text),
+        "faq":      lambda: _extract_faq(all_text, query),
+        "events":   lambda: _extract_general(all_text, query),
+        "general":  lambda: _extract_general(all_text, query),
+    }
+
+    structured = dispatch.get(content_type, dispatch["general"])()
+    sentences  = _extract_general(all_text, query).get("sentences", [])
+
+    return {
+        "content_type": content_type,
+        "structured":   structured,
+        "all_text":     all_text,
+        "chunk_titles": chunk_titles,
+        "sentences":    sentences,
+    }
+______
+utils.py:
+"""
+utils.py — Intent detection, query expansion, keyword extraction, text helpers.
+
+v3.0 — Integrated with NLU classifier + fuzzy correction.
+
+ARCHITECTURE:
+  detect_intent_mode_smart() is the new primary entry point:
+    1. Run fuzzy_match.correct_query() to fix typos/slang
+    2. Run nlu.predict_intent() — trained TF-IDF+SVM classifier
+    3. If NLU confidence is high → use NLU result
+    4. If NLU confidence is low  → fall back to rule-based detect_intent_mode()
+    5. Return final intent_mode string
+
+  The old rule-based detect_intent_mode() is kept as a pure fallback.
+  It is still called when NLU is unavailable or uncertain.
+"""
+
+import re
+from typing import List, Optional
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# A) Intent detection — rule-based (fallback)
+# ══════════════════════════════════════════════════════════════════════════
+
+_GREETINGS = [
+    "hi", "hello", "hey", "howdy", "hiya", "greetings",
+    "good morning", "good afternoon", "good evening", "good night",
+    "sup", "yo",
+]
+
+_SMALL_TALK_EXACT = [
+    "how are you", "how r u", "how are u", "how do you do",
+    "are you a bot", "are you an ai", "are you real",
+    "nice to meet you", "pleased to meet you",
+    "thank you", "thanks", "thank u", "thx", "ty",
+    "ok thanks", "okay thanks", "great thanks",
+    "bye", "goodbye", "see you", "take care", "cya", "see ya",
+    "what's up", "whats up",
+    "good", "okay", "ok", "cool", "nice", "great", "awesome",
+    "not bad", "i'm fine", "im fine", "i am fine",
+]
+
+_KB_INTENT_OVERRIDES = [
+    "what can you do", "what can you",
+    "what do you offer", "what do you provide", "what do you do",
+    "what services", "can you help", "help me", "i need help",
+    "are you free", "are you available", "do you have availability",
+    "what are your", "tell me about", "show me", "let me know",
+    "i want to", "i would like", "i need", "i am looking",
+    "do you do", "can you do", "can you make",
+    "how much", "what is the price", "what is the cost",
+    "book", "appointment", "schedule",
+    "your service", "your services", "your price", "your pricing",
+    "give me", "tell me", "your phone", "your email", "your number",
+]
+
+_INTENT_SHORT = [
+    "in short", "short answer", "brief", "summarise", "summarize",
+    "one paragraph", "quick", "tldr", "briefly",
+    "in 2 line", "in 2 lines", "in one line", "in a sentence",
+    "in 1 line", "1 line", "one line",
+    "give me 1", "give me one", "give me 1 line", "give me one line",
+    "give me a line", "just 1", "just one",
+    "short intro", "short description", "few words", "few lines",
+    "2 lines", "two lines", "one sentence",
+]
+_INTENT_STEPS = [
+    "step by step", "steps to", "how to", "how do i",
+    "procedure", "workflow", "guide me", "walk me through",
+    "show me how", "process for", "explain how",
+]
+_INTENT_DETAILED = [
+    "detailed explanation", "explain fully", "deep explanation",
+    "complete answer", "in detail", "elaborate", "full detail",
+    "explain everything", "tell me everything", "full explanation",
+    "complete details", "complete information", "everything about",
+]
+
+_BUSINESS_WORDS = {
+    "book", "service", "services", "price", "cost", "free", "available",
+    "appointment", "makeup", "bridal", "party", "henna", "offer",
+    "package", "chirag", "jinni", "artist", "pricing", "contact",
+    "phone", "email", "instagram", "youtube",
+}
+
+
+def detect_intent_mode(message: str) -> str:
+    """
+    Rule-based intent detection. Used as fallback when NLU is uncertain.
+    Returns one of: greeting | small_talk | short | steps | detailed | default
+    """
+    lower = message.lower().strip()
+    clean = re.sub(r"[^\w\s]", "", lower).strip()
+    words = clean.split()
+
+    # KB override — must go to KB
+    if any(phrase in lower for phrase in _KB_INTENT_OVERRIDES):
+        if any(k in lower for k in _INTENT_SHORT):    return "short"
+        if any(k in lower for k in _INTENT_DETAILED): return "detailed"
+        if any(k in lower for k in _INTENT_STEPS):    return "steps"
+        return "default"
+
+    # Greeting
+    if len(words) <= 3 and (clean in _GREETINGS or
+            any(clean == g or clean.startswith(g + " ") for g in _GREETINGS)):
+        return "greeting"
+
+    # Small talk
+    if any(phrase == lower or phrase == clean for phrase in _SMALL_TALK_EXACT):
+        return "small_talk"
+    if (len(words) <= 4
+            and any(lower.startswith(p) for p in _SMALL_TALK_EXACT)
+            and not any(bw in lower for bw in _BUSINESS_WORDS)):
+        return "small_talk"
+
+    # Output modes
+    if any(k in lower for k in _INTENT_SHORT):    return "short"
+    if any(k in lower for k in _INTENT_DETAILED): return "detailed"
+    if any(k in lower for k in _INTENT_STEPS):    return "steps"
+
+    return "default"
+
+
+def is_conversational(intent_mode: str) -> bool:
+    return intent_mode in ("greeting", "small_talk")
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# B) Smart intent detection — NLU + fuzzy + rule-based combined
+# ══════════════════════════════════════════════════════════════════════════
+
+def detect_intent_mode_smart(message: str) -> dict:
+    """
+    Full NLU pipeline: fuzzy correction → NLU model → rule-based fallback.
+
+    Returns:
+        {
+            "intent_mode":       str,   # final intent_mode for the pipeline
+            "corrected_query":   str,   # typo/slang-corrected version of message
+            "nlu_intent":        str,   # raw NLU label (for logging)
+            "nlu_confidence":    float, # NLU model confidence
+            "nlu_used":          bool,  # True if NLU result was trusted
+        }
+    """
+    # Step 1: Fuzzy correction
+    try:
+        from agent.fuzzy_match import correct_query
+        corrected = correct_query(message)
+    except Exception:
+        corrected = message
+
+    # Step 2: NLU model prediction
+    nlu_intent     = None
+    nlu_confidence = 0.0
+    nlu_used       = False
+    intent_mode    = None
+
+    try:
+        from agent.nlu import predict_intent, nlu_intent_to_mode
+        nlu_result  = predict_intent(corrected)
+        nlu_intent  = nlu_result["intent"]
+        nlu_confidence = nlu_result["confidence"]
+
+        # If NLU is confident, trust it
+        mode_from_nlu = nlu_intent_to_mode(nlu_result)
+        if mode_from_nlu is not None:
+            intent_mode = mode_from_nlu
+            nlu_used    = True
+    except Exception as e:
+        pass   # NLU unavailable — fall through to rule-based
+
+    # Step 3: Rule-based fallback if NLU was uncertain or unavailable
+    if intent_mode is None:
+        intent_mode = detect_intent_mode(corrected)
+
+    return {
+        "intent_mode":     intent_mode,
+        "corrected_query": corrected,
+        "nlu_intent":      nlu_intent,
+        "nlu_confidence":  nlu_confidence,
+        "nlu_used":        nlu_used,
+    }
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# C) Query expansion — vague → rich KB search strings
+# ══════════════════════════════════════════════════════════════════════════
+
+_QUERY_EXPANSION_MAP = [
+    (r"\bwhat can you do\b",                        "services offered bridal party makeup henna"),
+    (r"\bwhat do you (do|offer|provide)\b",         "services offered bridal party makeup henna"),
+    (r"\bwhat (are|is) (your )?services\b",         "services offered bridal party makeup henna"),
+    (r"\byour services\b",                          "services offered bridal party makeup henna"),
+    (r"\btell me about (your )?services\b",         "services offered bridal party makeup henna"),
+    (r"\bcan you help\b",                           "services offered bridal party makeup henna"),
+    (r"\bwhat (can you|do you) (offer|have|provide)\b", "services offered bridal party makeup henna"),
+    (r"\bwho are you\b",                            "about JinniChirag Makeup Artist Chirag Sharma experience"),
+    (r"\btell me about (your)?self\b",              "about JinniChirag Makeup Artist Chirag Sharma"),
+    (r"\bintroduce yourself\b",                     "about JinniChirag Makeup Artist Chirag Sharma"),
+    (r"\babout you\b",                              "about JinniChirag Makeup Artist Chirag Sharma"),
+    (r"\bgive me.{0,10}(line|lines|sentence).{0,10}about\b",
+                                                    "about JinniChirag Makeup Artist Chirag Sharma"),
+    (r"\bhow much\b",                               "pricing cost bridal party makeup packages"),
+    (r"\byour (price|pricing|cost|charges|rate)\b", "pricing cost bridal party makeup packages"),
+    (r"\bhow (to |do i )?book\b",                   "booking appointment process steps OTP confirmation"),
+    (r"\bare you (free|available)\b",               "booking availability appointment slot schedule"),
+    (r"\bcan i (book|schedule|get)\b",              "booking appointment process steps"),
+    (r"\bhow (to |can i )?contact\b",               "contact phone email WhatsApp Instagram"),
+    (r"\byour (phone|number|email|contact)\b",      "contact phone email WhatsApp Instagram"),
+    (r"\b(follower|following|social media count)\b","social media followers Instagram YouTube TikTok"),
+    (r"\byour (social|instagram|youtube|facebook|tiktok)\b",
+                                                    "social media Instagram YouTube Facebook TikTok followers"),
+]
+
+
+def expand_vague_query(message: str) -> str:
+    """Expand short/vague queries into richer KB search strings."""
+    lower = message.lower().strip()
+    for pattern, expansion in _QUERY_EXPANSION_MAP:
+        if re.search(pattern, lower):
+            return expansion
+    return message
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# D) Memory question detection (typo-tolerant)
+# ══════════════════════════════════════════════════════════════════════════
+
+_MEMORY_TRIGGERS = [
+    r"\b(what|which).{0,15}\b(first|last|previous|recent)\b.{0,20}\b(chat|question|ask|message|said|talked)\b",
+    r"\b(first|last|previous)\b.{0,10}\b(chat|question|message)\b",
+    r"\bwhat (is|was|were) (my|our|out)\b.{0,15}\b(chat|question|message|ask)\b",
+    r"\bwhat (did|have) (i|we)\b.{0,10}\b(ask|say|talk|asked|said)\b",
+    r"\bremind me\b.{0,20}\b(ask|said|question|message)\b",
+    r"\bmy (first|last|previous|recent) (question|chat|message|ask)\b",
+    r"\bfirst chat\b",
+    r"\bprevious question\b",
+    r"\bout first\b",
+    r"\bfirst question\b",
+    r"\blast question\b",
+]
+
+_MEMORY_PATTERN = re.compile("|".join(_MEMORY_TRIGGERS), re.IGNORECASE)
+
+
+def is_memory_question(message: str) -> bool:
+    """True if the user is asking about their conversation history."""
+    normalised = message.lower()
+    normalised = re.sub(r"\bout\b", "our", normalised)
+    normalised = re.sub(r"\bfirts\b", "first", normalised)
+    return bool(_MEMORY_PATTERN.search(normalised))
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# E) Keyword extraction
+# ══════════════════════════════════════════════════════════════════════════
+
+_STOP_WORDS = {
+    "i", "me", "my", "we", "our", "you", "your", "the", "a", "an",
+    "is", "are", "was", "were", "be", "been", "do", "does", "did",
+    "have", "has", "had", "will", "would", "could", "should", "may",
+    "might", "can", "to", "of", "in", "on", "at", "for", "with",
+    "and", "or", "but", "not", "what", "which", "who", "this",
+    "that", "it", "its", "so", "if", "about", "how", "why", "when",
+    "tell", "show", "give", "get", "need", "want", "please", "all",
+    "just", "also", "any", "some", "help", "me", "us", "say",
+}
+
+
+def extract_keywords(text: str) -> List[str]:
+    words = re.findall(r"[a-z]+", text.lower())
+    return [w for w in words if w not in _STOP_WORDS and len(w) > 2]
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# F) Follow-up detection
+# ══════════════════════════════════════════════════════════════════════════
+
+_FOLLOWUP_WORDS = {"this", "that", "it", "its", "they", "them", "those", "these"}
+
+
+def is_followup_query(message: str) -> bool:
+    words = message.lower().split()
+    if len(words) <= 3:
+        return True
+    if any(w in _FOLLOWUP_WORDS for w in words[:3]):
+        return True
+    return False
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# G) Text helpers
+# ══════════════════════════════════════════════════════════════════════════
+
+def safe_truncate(text: str, max_chars: int) -> str:
+    if len(text) <= max_chars:
+        return text
+    for sep in (". ", "! ", "? ", "\n"):
+        idx = text.rfind(sep, 0, max_chars)
+        if idx > max_chars // 2:
+            return text[:idx + 1].strip()
+    idx = text.rfind(" ", 0, max_chars)
+    return text[:idx].strip() if idx > 0 else text[:max_chars]
+
+
+def split_sentences(text: str) -> List[str]:
+    parts = re.split(r"(?<=[.!?])\s+", text.strip())
+    return [p.strip() for p in parts if len(p.strip()) > 10]
+________
+These is the current stae of code of my project
