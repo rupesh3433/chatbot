@@ -82,3 +82,11 @@ ENV/
 # Misc
 *.bak
 *.swp
+
+
+# LFS
+
+*.safetensors
+*.pt
+*.bin
+*.pth
